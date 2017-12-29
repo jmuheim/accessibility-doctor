@@ -1,4 +1,4 @@
-# Accessibility-Doctor (a11y-doc)
+# Accessibility-Doctor
 
 TODO: Add badges!
 
