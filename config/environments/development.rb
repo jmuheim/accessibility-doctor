@@ -49,7 +49,7 @@ Rails.application.configure do
   # at the top of the stack.
   # More info also here: https://github.com/johnbintz/rack-livereload/issues/73
   config.middleware.insert_before ActionDispatch::DebugExceptions, Rack::LiveReload, no_swf:           true,
-                                                                                     live_reload_port: 35729
+                                                                                     live_reload_port: 35777
 
   # TODO: This should be retrieved from DefaultOptions, see http://stackoverflow.com/questions/3842818#comment46921326_23489706
   config.action_mailer.default_url_options = {host: Rails.application.secrets.default_url_host}

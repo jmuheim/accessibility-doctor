@@ -1,4 +1,4 @@
-# TITLE
+# Accessibility-Doctor.com
 
 TODO: Add badges!
 
@@ -14,8 +14,8 @@ Recommended environment:
 
 Setup:
 
-- `$ git clone git@github.com:GITHUB/PROJECT.git`
-- `$ cd PROJECT`
+- `$ git clone git@github.com:GITHUB/accessibility-doctor.git`
+- `$ cd accessibility-doctor`
 - `$ bundle install`
 - `$ cp config/secrets.example.yml config/secrets.yml`
 - Open `config/secrets.yml` and edit it

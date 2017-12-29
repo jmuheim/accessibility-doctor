@@ -102,7 +102,7 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |config|
-  config.include Base::Matchers, type: :feature
+  config.include AccessibilityDoctor::Matchers, type: :feature
 end
 
 Shoulda::Matchers.configure do |config|

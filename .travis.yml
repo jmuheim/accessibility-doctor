@@ -21,6 +21,6 @@ script:
 notifications:
   email:
     recipients:
-      - joshua.muheim@access-for-all.ch
+      - forum@josh.ch
     on_failure: change
     on_success: change

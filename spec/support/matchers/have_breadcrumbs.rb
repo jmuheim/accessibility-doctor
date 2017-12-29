@@ -1,4 +1,4 @@
-module Base
+module AccessibilityDoctor
   module Matchers
     class HaveBreadcrumbs
       def initialize(*breadcrumbs)
