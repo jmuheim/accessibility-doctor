@@ -1,8 +1,8 @@
 ---
 de:
   app:
-    acronym: Base
-    name: Base Project
+    acronym: Accessibility Doctor
+    name: Accessibility Doctor
     slogan: Vorkonfiguriertes grundlegendes zugängliches Rails Projekt. Fork erstellen!
   buttons:
     save: Speichern
@@ -11,7 +11,7 @@ de:
     news:
       title: Letzte Neuigkeiten
     show:
-      title: Willkommen auf Base!
+      title: Willkommen auf Accessibility Doctor!
     statistics:
       number_of_resource: Anzahl %{resource}
       title: Statistiken
