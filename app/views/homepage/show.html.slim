@@ -2,18 +2,59 @@
 = headline_with_flash
 
 .row
+  .col-md-3
+    .markdown
+      .figure.portrait
+        = image_tag 'homepage/joshua-muheim.jpg', class: 'image', alt: 'Porträtfoto Joshua Muheim'
+        p.caption aria-hidden=true Porträtfoto Joshua Muheim
+
+  .col-md-5
+    .lead
+      p Mein Name ist <strong>Joshua Muheim</strong>. Ich freue mich, dass Sie den Weg auf meine Website gefunden haben.
+
+      p Ich biete <strong>Beratung</strong> an zu Themen rund um die <strong>Barrierefreiheit</strong> elektronischer Medien (insbesondere Websites und mobile Apps). Ich tue dies gerne bei Ihnen vor Ort (Schweiz und umliegende Länder), sowie <strong>standordunabhängig</strong> mittels Telefon, Email, Video-Conferencing, etc.
+
+      p Ich beherrsche <strong>Deutsch und Englisch</strong> fliessend.
+
+  .col-md-4
+    .alert.alert-danger
+      h2.h4
+        span style="font-size: 16px; display: inline-block; width: 100%; font-weight: normal; margin-bottom: 6px" Kennenlern-Angebot:
+        | Kostenlose live remote Prüf-Session!
+
+      p <strong>Ich teste live</strong> Ihre Website auf Barrierefreiheit - Sie schauen mir mittels Screen-Sharing dabei zu!
+
+      ul
+        li Erste 15min <strong>kostenlos</strong>
+        li Inklusive Download des <strong>Video-Mitschnitts</strong>
+        li <strong>Keinerlei Verpflichtung</strong> jeglicher Art
+
+      p <strong>Sie werden staunen</strong>, was Sie in so kurzer Zeit alles über Barrierefreiheit lernen werden, und <strong>überzeugt sein</strong> von meinen Qualifikationen!
+
+      p: a.btn.btn-danger href="#"
+        => icon 'hand-o-right', type: :fa
+        | Reservieren Sie jetzt Ihre Session!
+
+.row
+  .col-md-12
+    hr
+
+    h2.sr-only Einleitende Stellungnahmen
+
+.row
   .col-md-4
     .alert.alert-info
-      h2.h4
+      h3.h4
+        => icon 'quote-right', type: :fa
         ' Definition
         dfn Barrierefreiheit
-        | :
 
       p
-        q> Elektronische Medien sind so gestaltet, dass diese auch von Menschen mit Behinderung ohne Erschwernis oder fremde Hilfe genutzt werden können.
-        ' (Quelle:
+        q Elektronische Medien sind so gestaltet, dass diese auch von Menschen mit Behinderung ohne Erschwernis oder fremde Hilfe genutzt werden können.
+
+      p
+        ' Quelle:
         a href='https://www.duden.de/rechtschreibung/barrierefrei#Bedeutung2' Duden.de
-        | )
 
       p
         ' Synonyme:
@@ -22,59 +63,107 @@
         strong Accessibility
         | .
 
-  .col-md-8
-    .alert.alert-success
-      h2.h4 Meine feste Überzeugung:
+  .col-md-5
+    .alert.alert-warning
+      h3.h4
+        => icon 'thumbs-o-up', type: :fa
+        | Meine feste Überzeugung
 
       ol
-        li <strong>Guter Code</strong> ist gleichzeitig <strong>sauber</strong>, <strong>langlebig</strong>, einfach <strong>wartbar</strong>, automatisiert <strong>testbar</strong> - und dadurch von sich aus weitestgehend <strong>zugänglich</strong>
-        li Barrierefreiheit ist absolut <strong>vereinbar</strong> mit <strong>Innovativität</strong>, <strong>Interaktivität</strong> und modernem <strong>Design</strong>
-        li Korrekt angegangen <strong>fördert Barrierefreiheit</strong> die <strong>Gesamtqualität</strong> eines Projekts immens
+        li <strong>Guter, sauberer Code</strong> ist gleichzeitig <strong>einfach</strong>, <strong>langlebig</strong> (robust), gut <strong>wartbar</strong>, automatisiert <strong>testbar</strong> - und dadurch von sich aus bereits weitestgehend <strong>zugänglich</strong>.
+        li Barrierefreiheit ist vollends <strong>vereinbar</strong> mit <strong>Innovativität</strong>, <strong>Interaktivität</strong> und attraktivem <strong>Design</strong>.
+        li <strong>Barrierefreiheit fördert</strong> die <strong>Gesamtqualität</strong> eines Projekts weit über die offensichtlichen Bereiche hinaus (SEO, Usability).
 
-      p Aber: Streben nach Barrierefreiheit ohne profundes Wissen bzw. kompetente Begleitung ist zum Scheitern verurteilt!
+  .col-md-3
+    .alert.alert-success
+      h3.h4
+        => icon :money, type: :fa
+        | Kaum zusätzliche Kosten
+
+      p Erfahrungsgemäss werden <strong>Aufwände</strong>, welche zu Beginn für Barrierefreiheit zusätzlich investiert werden müssen, in vielen Fällen im Laufe des Projekts durch damit einhergehende <strong>Einsparungen</strong> wieder <strong>ausgeglichen</strong>.
 
 .row
   .col-md-12
-    .lead
-      p Mein Name ist <strong>Joshua Muheim</strong>. Ich biete pragmatische <strong>Beratung</strong> und <strong>Projektbegleitung</strong> an zu Themen rund um die <strong>Barrierefreiheit elektronischer Medien</strong>.
+    .alert.alert-danger
+      h3.h4
+        => icon 'exclamation-triangle', type: :fa
+        | Aber Vorsicht: Barrierefreiheit ist kein Selbstläufer!
 
-      p Meine Qualifikation ist die einzigartige Kombination von:
+      p Jahrelange Erfahrung mit Dutzenden selbst durchgeführten, aktiv begleiteten und getesteten Projekten hat mir gezeigt, dass das Streben nach Barrierefreiheit <strong>ohne profundes Wissen</strong> in den meisten Fällen <strong>zum Scheitern verurteilt</strong> ist! Halbwissen ist besonders gefährlich und führt <strong>bei komplexeren Projekten</strong> fast unweigerlich zu einem Desaster.
 
-      ul
-        li
-          ' Technisch versiertem
-          strong> Full-Stack Web-Developer
-          | mit 10+ Jahren Erfahrung im Frontend und Backend
+      p <strong>Kompetente Beratung</strong> ist deshalb von immenser Bedeutung.
 
-        li
-          ' Fachlich breit aufgestelltem
-          strong> Accessibility Consultant
-          | mit 3+ Jahren Berufstätigkeit als Teil des inklusiven Teams der Stiftung «Zugang für alle»
+    hr
 
-        li
-          ' Aufgeschlossenem
-          strong> Bachelor in Psychologie
-          | mit Fingerspitzengefühl im Umgang mit Menschen
-
-      p Ich fülle somit optimal die sonst oft schwierig zu überbrückende Lücke zwischen <strong>Anbietern elektronischer Medien</strong> (insbesondere Websites und mobile Apps) und den <strong>Bedürfnissen betroffener Endnutzer</strong> derselben.
-
-      p Ich unterstütze Sie konkret dabei, für jegliche Anforderungen <strong>einfache</strong> und gleichwohl <strong>moderne</strong>, technisch <strong>saubere Lösungen</strong> zu erarbeiten, welche <strong>100% zugänglich</strong> sind.
+    h2 style="margin-bottom: 0" Ich bin:
 
 .row
   .col-md-6
-    h2 Erfahrung
+    h3 Umfassend qualifiziert
 
-    markdown:
-      Als Fullstack Web-Entwickler mit über zehn Jahren Erfahrung verfüge ich über umfassendes Wissen im Bereich Frontend und Backend.
+    p Mich charakterisiert folgende einzigartige Kombination:
 
-      Als Angestellter von «Zugang für alle» durfte ich über drei Jahre
+    ol
+      li
+        ' Technisch versierter
+        strong> Full-Stack Web-Developer
+        | mit <strong>10+ Jahren Erfahrung</strong> im Frontend und Backend
 
-      weit über die offensichtlichen Bereiche hinaus (SEO, Usability)
+      li
+        ' Fachlich breit aufgestellter
+        strong> Accessibility Consultant
+        ' mit <strong>3+ Jahren Berufstätigkeit</strong> als Teil des inklusiven Teams der Stiftung
+        a href="http://www.access-for-all.ch" «Zugang für alle»
 
-     Ich bin seit 15 Jahren als [Full-Stack](https://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/) Web-Entwickler tätig. Seit 2014 habe ich als Accessibility Consultant der Stiftung «Zugang für alle» täglich mit Betroffenen zusammen
+      li
+        ' Absolvent des
+        strong Bachelor of Science in Psychologie
+
+    p
+      ' Neben meiner Expertise bezüglich Web-Technologien (HTML, CSS und JavaScript) verfüge ich über profunde <strong>theoretische und praktische Kenntnisse</strong> der relevanten internationalen Standards:
+
+    ul
+      li: a href='https://www.w3.org/TR/WCAG20/' Web Content Accessibility Guidelines (WCAG) 2.0
+      li: a href='https://www.w3.org/TR/wai-aria/' Accessible Rich Internet Applications (ARIA)
+
+    p Ich kann zudem auf <strong>langjährige Erfahrung</strong> zählen in der <strong>Handhabung assistiver Technologien</strong> wie Screen Reader, Zoom, Hochkontrast, Schaltersteuerung, etc. auf Desktop (Windows, macOS) und Mobile Plattformen (iOS, Android).
 
   .col-md-6
-    h2 #{icon 'youtube-play', type: :fa} Live Remote Accessibility Testing
+    h3 Flexibel bezüglich Ihrer Bedürfnisse
+
+    p Sei es bei einer <strong>Beratung</strong> vor Ort, einer <strong>Hack-Session</strong> direkt in Ihrem Code zusammen mit Ihren Entwicklern, einer live <strong>Prüf-Session</strong> Ihrer Website "per remote" oder einem <strong>individuellen Webinar</strong>:
+
+    p Mit meiner Erfahrung bilde ich die <strong>optimale Schnittstelle</strong> für die sonst oft schwierig zu überbrückende Lücke zwischen <strong>Anbietern elektronischer Medien</strong> und den <strong>Bedürfnissen betroffener Endnutzer</strong>.
+
+    p Ich unterstütze Sie somit <strong>aktiv und konkret</strong> dabei, für jegliche Anforderungen <strong>einfache</strong> und gleichwohl <strong>moderne</strong>, technisch <strong>saubere Lösungen</strong> zu erarbeiten, welche <strong>100% zugänglich</strong> sind.
+
+    h3 Gründer des «Accessibility Developer Guide»
+
+    p
+      ' Die wohl <strong>beste Referenz</strong> für mein Können ist der
+      a href="https://www.accessibility-developer-guide.com" «Accessibility Developer Guide (ADG)»
+      | , die umfassende Online-Plattform zur Entwicklung zugänglicher Websites.
+
+    p Ich bin der <strong>geistige Vater</strong> des ADG, und seine Inhalte stammen grösstenteils von mir.
+
+.row
+  .col-md-12
+    hr
+
+    h2 Ich biete an:
+
+    p Im Zentrum meiner Dienstleistungen steht die konsequente <strong>Weitergabe meiner Expertise</strong> an den Kunden durch <strong>"Learning by doing"</strong> - ganz gemäss dem Leitsatz <strong>"Hilfe zur Selbsthilfe"</strong>.
+
+.row
+  .col-md-6
+    h3 #{icon 'comments-o', type: :fa} Beratung
+
+    h3 Webinare
+
+    h3 Prototyping
+
+  .col-md-6
+    h3 #{icon 'youtube-play', type: :fa} Live Remote Accessibility Testing
 
     markdown:
       Während einer [Screen-Sharing](https://de.wikipedia.org/wiki/Screen-Sharing)-Session mit Ihnen teste ich Ihre Website auf typische Probleme der Zugänglichkeit - konkret und einfach nachvollziehbar!
@@ -89,6 +178,10 @@
       Die vollständige Session wird Ihnen darauf als Video-Mitschnitt zur Verfügung gestellt, so dass Sie diesen nach Bedarf erneut anschauen können. Zudem erhalten Sie eine spezifische Liste von Links zu den für Sie relevanten Tools, Techniken, und weiter führenden Informationen.
 
       **Buchen Sie jetzt Ihre erste 15-minütige Session - kostenlos!**
+
+.row
+  .col-md-12
+    h2 Ich koste:
 
 .row
   .col-sm-8 == render 'news'

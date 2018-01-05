@@ -11,7 +11,7 @@ en:
     news:
       title: Latest news
     show:
-      title: Welcome to Accessibility Doctor!
+      title: Welcome to Accessibility-Doctor.com!
     statistics:
       number_of_resource: Number of %{resource}
       title: Statistics
