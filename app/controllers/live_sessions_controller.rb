@@ -3,12 +3,29 @@ class LiveSessionsController < ApplicationController
   before_action :add_breadcrumbs
   respond_to :html
 
+  def create
+    @live_session.save
+
+    respond_with @live_session
+  end
+
   private
 
+  def live_session_params
+    params.require(:live_session).permit(:start_date,
+                                         :end_date,
+                                         :customer_name,
+                                         :customer_email,
+                                         :url,
+                                         :description,
+                                         :notes,
+                                         :lock_version)
+  end
+
   def add_breadcrumbs
-    add_breadcrumb LiveSession.model_name.human(count: :other), live_sessions_path if [:index, :new, :create].include? action_name.to_sym
-    add_breadcrumb @live_session.id, live_session_path(@live_session)      if [:show, :edit, :update].include? action_name.to_sym
-    add_breadcrumb t('actions.new'),                new_live_session_path         if [:new,  :create].include?        action_name.to_sym
-    add_breadcrumb t('actions.edit'),               edit_live_session_path(@live_session) if [:edit, :update].include?        action_name.to_sym
+    add_breadcrumb LiveSession.model_name.human(count: :other), live_sessions_path                    if [:index, :new, :create].include? action_name.to_sym
+    add_breadcrumb @live_session.id,                            live_session_path(@live_session)      if [:show, :edit, :update].include? action_name.to_sym
+    add_breadcrumb t('actions.new'),                            new_live_session_path                 if [:new,  :create].include?        action_name.to_sym
+    add_breadcrumb t('actions.edit'),                           edit_live_session_path(@live_session) if [:edit, :update].include?        action_name.to_sym
   end
 end
