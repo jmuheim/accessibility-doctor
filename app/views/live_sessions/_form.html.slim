@@ -1,0 +1,21 @@
+= simple_form_for @live_session, html:    {class: 'form-horizontal'},
+                                wrapper: :horizontal_form do |f|
+  = f.error_notification
+
+  == render 'shared/form/stale_info', f: f
+
+  = panel do |panel|
+    = panel.heading do
+      = t('shared.form.details')
+
+    = panel.body do
+      = f.input :start_date
+      = f.input :end_date
+      = f.input :customer_name
+      = f.input :customer_email
+      = f.input :url
+      = f.input :description
+      = f.input :notes
+  .row
+    .col-md-12
+      == render 'shared/form/actions', form: f, resource: @live_session

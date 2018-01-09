@@ -72,6 +72,8 @@ class Ability
     can [:index, :read], Code
     can [:index, :read], Image
 
+    can :crud, LiveSession
+
     can :crud, Page
 
     can [:index, :create, :read, :update], User

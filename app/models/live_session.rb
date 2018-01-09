@@ -1,0 +1,2 @@
+class LiveSession < ApplicationRecord
+end

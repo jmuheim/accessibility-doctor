@@ -1,0 +1,2 @@
+module LiveSessionsHelper
+end

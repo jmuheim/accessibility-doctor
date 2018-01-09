@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Start date:
+  = @live_session.start_date
+p
+  strong End date:
+  = @live_session.end_date
+p
+  strong Customer name:
+  = @live_session.customer_name
+p
+  strong Customer email:
+  = @live_session.customer_email
+p
+  strong Url:
+  = @live_session.url
+p
+  strong Description:
+  = @live_session.description
+p
+  strong Notes:
+  = @live_session.notes
+
+=> link_to 'Edit', edit_live_session_path(@live_session)
+'|
+=< link_to 'Back', live_sessions_path
