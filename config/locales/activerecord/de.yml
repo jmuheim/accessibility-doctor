@@ -15,6 +15,13 @@ de:
         file: Datei
         identifier: Kennung
         updated_at: Aktualisiert am
+      live_session:
+        datetime: Datum und Zeit
+        duration: Dauer
+        customer_name: Ihr Name
+        customer_email: Ihre Emailadresse
+        url: Zu testende Website
+        description: Beschreibung
       page:
         children: Unterseiten
         content: Inhalt

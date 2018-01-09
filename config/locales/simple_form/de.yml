@@ -7,6 +7,13 @@ de:
       codes:
         identifier: Besteht aus CodePen-Nutzer und Pen-ID, getrennt durch Bindestrich (z.B. jmuheim-KmKOZO)
         title: Wird während des Speicherns automatisch aus dem Pen übernommen
+      live_session:
+        datetime: Geben Sie ein für Sie passendes Datum (inkl. Zeit) an. Falls dieses für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
+        duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
+        customer_name: Gerne mit dem Namen Ihrer Firma, z.B. <kbd>Hans Muster, Muster und Söhne GmbH</kbd>.
+        customer_email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
+        url: Die Angabe einer gültigen URL erlaubt, dass ich mir im Voraus ein Bild der Website mache, um die Session optimal zu planen.
+        description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
       page:
         content: Der Hauptinhalt der Seite. Angezeigt unter dem the Lead und über den Teasern der Unterseiten der Seite.
         lead: Beschreibt den Inhalt der Seite in wenigen kurzen Sätzen. Angezeigt am Anfang der Seite und in Teasern.
@@ -45,3 +52,6 @@ de:
       mark: "*"
       text: Pflichtfeld
     'yes': Ja
+    placeholders:
+      live_session:
+        url: http://www.example.com

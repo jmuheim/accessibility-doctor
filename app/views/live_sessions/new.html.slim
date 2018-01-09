@@ -1,5 +1,3 @@
-h1 New live_session
+= headline_with_flash t('actions.new_resource', resource: LiveSession.model_name.human)
 
-== render 'form'
-
-= link_to 'Back', live_sessions_path
+== render 'form', live_session: @live_session

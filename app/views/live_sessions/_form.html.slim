@@ -9,11 +9,11 @@
       = t('shared.form.details')
 
     = panel.body do
-      = f.input :start_date
-      = f.input :end_date
+      = f.input :url
+      = f.input :datetime, minute_step: 15
+      = f.input :duration, disabled: true
       = f.input :customer_name
       = f.input :customer_email
-      = f.input :url
       = f.input :description
       = f.input :notes
   .row

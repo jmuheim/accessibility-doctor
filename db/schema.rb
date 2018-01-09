@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 20180109125940) do
   end
 
   create_table "live_sessions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.datetime "datetime"
+    t.integer "duration"
     t.string "customer_name"
     t.string "customer_email"
     t.string "url"

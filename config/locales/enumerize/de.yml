@@ -1,6 +1,9 @@
 ---
 de:
   enumerize:
+    live_session:
+      duration:
+        quarter_hour: Viertelstunde (15 Minuten)
     user:
       role:
         admin: Administrator
