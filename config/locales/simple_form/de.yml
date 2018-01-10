@@ -8,12 +8,14 @@ de:
         identifier: Besteht aus CodePen-Nutzer und Pen-ID, getrennt durch Bindestrich (z.B. jmuheim-KmKOZO)
         title: Wird während des Speicherns automatisch aus dem Pen übernommen
       trial_session_request:
-        datetime: Geben Sie ein für Sie passendes Datum (inkl. Zeit) an. Falls dieses für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
+        datetime: Geben Sie ein für Sie passendes Datum mit Zeit an. Falls Ihr Vorschlag für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
-        customer_name: Gerne mit dem Namen Ihrer Firma, z.B. <kbd>Hans Muster, Muster und Söhne GmbH</kbd>.
         customer_email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
-        url: Die Angabe einer gültigen URL erlaubt, dass ich mir im Voraus ein Bild der Website mache, um die Session optimal zu planen.
+        url: Im Zentrum der Session steht die Überprüfung Ihrer Website, somit erlaubt mir die Angabe einer gültigen URL, die Session optimal zu planen.
         description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
+        message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
+        how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
+        agree_to_terms_and_conditions: Lesen Sie die <a href="#">Allgemeinen Geschäftsbedingungen</a>!
       page:
         content: Der Hauptinhalt der Seite. Angezeigt unter dem the Lead und über den Teasern der Unterseiten der Seite.
         lead: Beschreibt den Inhalt der Seite in wenigen kurzen Sätzen. Angezeigt am Anfang der Seite und in Teasern.

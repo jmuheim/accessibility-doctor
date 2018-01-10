@@ -20,6 +20,10 @@ de:
         duration: Dauer
         customer_name: Ihr Name
         customer_email: Ihre Emailadresse
+        customer_company: Ihre Firma
+        message: Persönliche Nachricht
+        how_found_us: Wie haben Sie mich gefunden?
+        agree_to_terms_and_conditions: Ich akzeptiere die AGB
         url: Zu testende Website
         description: Beschreibung
       page:
@@ -71,6 +75,9 @@ de:
       paper_trail/version:
         one: Version
         other: Versionen
+      trial_session_request:
+        one: Antrag für Demo-Session
+        other: Anträge für Demo-Sessions
       user:
         one: Benutzer
         other: Benutzer

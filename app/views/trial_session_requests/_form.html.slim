@@ -1,21 +1,40 @@
 = simple_form_for @trial_session_request, html:    {class: 'form-horizontal'},
                                 wrapper: :horizontal_form do |f|
-  = f.error_notification
-
   == render 'shared/form/stale_info', f: f
 
   = panel do |panel|
     = panel.heading do
-      = t('shared.form.details')
+      | Ihre Personalien
+
+    = panel.body do
+      = f.input :customer_name
+      = f.input :customer_company
+      = f.input :customer_email
+
+  = panel do |panel|
+    = panel.heading do
+      | Details zur Session
 
     = panel.body do
       = f.input :url
       = f.input :datetime, minute_step: 15
-      = f.input :duration, disabled: true
-      = f.input :customer_name
-      = f.input :customer_email
-      = f.input :description
-      = f.input :notes
+      = f.input :duration, disabled: true, include_blank: false
+
+  = panel do |panel|
+    = panel.heading do
+      | Weitere Details
+
+    = panel.body do
+      = f.input :how_found_us
+      = f.input :message
+
+  = panel do |panel|
+    = panel.heading do
+      | Allgemeine Geschäftsbedingungen (AGB)
+
+    = panel.body do
+      = f.input :agree_to_terms_and_conditions, as: :select
+
   .row
     .col-md-12
       == render 'shared/form/actions', form: f, resource: @trial_session_request
