@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :live_sessions
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   scope '(:locale)', locale: /en|de/ do

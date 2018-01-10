@@ -76,18 +76,6 @@ ActiveRecord::Schema.define(version: 20180109125940) do
     t.index ["creator_id"], name: "index_pages_on_creator_id"
   end
 
-  create_table "sessions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.string "customer_name"
-    t.string "customer_email"
-    t.string "url"
-    t.text "description"
-    t.text "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 100
     t.string "email"
