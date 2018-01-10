@@ -1,4 +1,4 @@
-= simple_form_for @live_session, html:    {class: 'form-horizontal'},
+= simple_form_for @trial_session_request, html:    {class: 'form-horizontal'},
                                 wrapper: :horizontal_form do |f|
   = f.error_notification
 
@@ -18,4 +18,4 @@
       = f.input :notes
   .row
     .col-md-12
-      == render 'shared/form/actions', form: f, resource: @live_session
+      == render 'shared/form/actions', form: f, resource: @trial_session_request
