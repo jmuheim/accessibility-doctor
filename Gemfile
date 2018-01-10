@@ -25,6 +25,8 @@ gem 'bootstrap-sass' # Sleek, intuitive, and powerful front-end framework
 
 gem 'font-awesome-rails' # The iconic font and CSS toolkit
 
+gem 'humanizer' #
+
 gem 'acts_as_tree' # Extends ActiveRecord to add simple support for organizing items into parent–children relationships
 
 gem 'acts_as_list' # An ActiveRecord plugin for managing lists

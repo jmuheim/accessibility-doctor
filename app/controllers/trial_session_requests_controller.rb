@@ -12,14 +12,18 @@ class TrialSessionRequestsController < ApplicationController
   private
 
   def trial_session_request_params
-    params.require(:trial_session_request).permit(:start_date,
-                                         :end_date,
-                                         :customer_name,
-                                         :customer_email,
-                                         :url,
-                                         :description,
-                                         :notes,
-                                         :lock_version)
+    params.require(:trial_session_request).permit(:datetime,
+                                                  :time_zone,
+                                                  :customer_name,
+                                                  :customer_email,
+                                                  :customer_company,
+                                                  :url,
+                                                  :how_found_us,
+                                                  :message,
+                                                  :agree_to_terms_and_conditions,
+                                                  :lock_version,
+                                                  :humanizer_answer,
+                                                  :humanizer_question_id)
   end
 
   def add_breadcrumbs

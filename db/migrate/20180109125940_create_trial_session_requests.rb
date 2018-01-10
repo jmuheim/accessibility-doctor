@@ -2,6 +2,7 @@ class CreateTrialSessionRequests < ActiveRecord::Migration[5.1]
   def change
     create_table :trial_session_requests do |t|
       t.datetime :datetime
+      t.string :time_zone
       t.string :customer_name
       t.string :customer_company
       t.string :customer_email

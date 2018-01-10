@@ -211,6 +211,7 @@ GEM
     highline (1.7.10)
     htmlentities (4.3.4)
     http_parser.rb (0.6.0)
+    humanizer (2.6.4)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.19)
@@ -521,6 +522,7 @@ DEPENDENCIES
   guard-migrate
   guard-rspec
   guard-shell
+  humanizer
   i18n-tasks
   i18n_yaml_sorter
   jbuilder (~> 2.5)
@@ -574,4 +576,4 @@ DEPENDENCIES
   xray-rails
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

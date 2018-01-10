@@ -11,11 +11,12 @@ de:
         datetime: Geben Sie ein für Sie passendes Datum mit Zeit an. Falls Ihr Vorschlag für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
         customer_email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
-        url: Im Zentrum der Session steht die Überprüfung Ihrer Website, somit erlaubt mir die Angabe einer gültigen URL, die Session optimal zu planen.
+        url: Die Angabe einer URL erlaubt mir, die Session optimal zu planen.
         description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
         message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
         how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
         agree_to_terms_and_conditions: Lesen Sie die <a href="#">Allgemeinen Geschäftsbedingungen</a>!
+        humanizer_answer: "Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies schützt mich vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href='https://de.wikipedia.org/wiki/CAPTCHA'>CAPTCHA (Wikipedia)</a>"
       page:
         content: Der Hauptinhalt der Seite. Angezeigt unter dem the Lead und über den Teasern der Unterseiten der Seite.
         lead: Beschreibt den Inhalt der Seite in wenigen kurzen Sätzen. Angezeigt am Anfang der Seite und in Teasern.

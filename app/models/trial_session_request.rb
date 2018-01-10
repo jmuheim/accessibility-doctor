@@ -1,8 +1,11 @@
 class TrialSessionRequest < ApplicationRecord
   extend Enumerize
+  include Humanizer
+
+  require_human_on :create
 
   validates :datetime, presence: true
-  validates :duration, presence: true
+  validates :time_zone, presence: true
   validates :customer_name, presence: true
   validates :customer_email, presence: true
   validates :how_found_us, presence: true

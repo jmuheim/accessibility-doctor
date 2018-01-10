@@ -1,27 +1,4 @@
-p#notice = notice
+= container_for @trial_session_request do
+  = headline_with_flash @trial_session_request.id
 
-p
-  strong Start date:
-  = @trial_session_request.start_date
-p
-  strong End date:
-  = @trial_session_request.end_date
-p
-  strong Customer name:
-  = @trial_session_request.customer_name
-p
-  strong Customer email:
-  = @trial_session_request.customer_email
-p
-  strong Url:
-  = @trial_session_request.url
-p
-  strong Description:
-  = @trial_session_request.description
-p
-  strong Notes:
-  = @trial_session_request.notes
-
-=> link_to 'Edit', edit_trial_session_request_path(@trial_session_request)
-'|
-=< link_to 'Back', trial_session_requests_path
+  = @trial_session_request.datetime
