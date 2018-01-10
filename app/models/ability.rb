@@ -72,7 +72,7 @@ class Ability
     can [:index, :read], Code
     can [:index, :read], Image
 
-    can :crud, LiveSession
+    can :crud, TrialSessionRequest
 
     can :crud, Page
 

@@ -1,4 +1,4 @@
-class LiveSession < ApplicationRecord
+class TrialSessionRequest < ApplicationRecord
   extend Enumerize
 
   validates :datetime, presence: true

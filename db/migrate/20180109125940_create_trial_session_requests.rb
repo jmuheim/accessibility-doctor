@@ -1,6 +1,6 @@
-class CreateLiveSessions < ActiveRecord::Migration[5.1]
+class CreateTrialSessionRequests < ActiveRecord::Migration[5.1]
   def change
-    create_table :live_sessions do |t|
+    create_table :trial_session_requests do |t|
       t.datetime :datetime
       t.integer :duration
       t.string :customer_name

@@ -1,7 +1,7 @@
 ---
 de:
   enumerize:
-    live_session:
+    trial_session_request:
       duration:
         quarter_hour: Viertelstunde (15 Minuten)
     user:

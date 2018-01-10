@@ -15,7 +15,7 @@ de:
         file: Datei
         identifier: Kennung
         updated_at: Aktualisiert am
-      live_session:
+      trial_session_request:
         datetime: Datum und Zeit
         duration: Dauer
         customer_name: Ihr Name

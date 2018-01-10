@@ -7,7 +7,7 @@ de:
       codes:
         identifier: Besteht aus CodePen-Nutzer und Pen-ID, getrennt durch Bindestrich (z.B. jmuheim-KmKOZO)
         title: Wird während des Speicherns automatisch aus dem Pen übernommen
-      live_session:
+      trial_session_request:
         datetime: Geben Sie ein für Sie passendes Datum (inkl. Zeit) an. Falls dieses für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
         customer_name: Gerne mit dem Namen Ihrer Firma, z.B. <kbd>Hans Muster, Muster und Söhne GmbH</kbd>.
@@ -53,5 +53,5 @@ de:
       text: Pflichtfeld
     'yes': Ja
     placeholders:
-      live_session:
+      trial_session_request:
         url: http://www.example.com

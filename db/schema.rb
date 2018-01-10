@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20180109125940) do
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
-  create_table "live_sessions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "trial_session_requests", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "datetime"
     t.integer "duration"
     t.string "customer_name"

@@ -1,0 +1,33 @@
+h1 Listing trial_session_requests
+
+table
+  thead
+    tr
+      th Start date
+      th End date
+      th Customer name
+      th Customer email
+      th Url
+      th Description
+      th Notes
+      th
+      th
+      th
+
+  tbody
+    - @trial_session_requests.each do |trial_session_request|
+      tr
+        td = trial_session_request.start_date
+        td = trial_session_request.end_date
+        td = trial_session_request.customer_name
+        td = trial_session_request.customer_email
+        td = trial_session_request.url
+        td = trial_session_request.description
+        td = trial_session_request.notes
+        td = link_to 'Show', trial_session_request
+        td = link_to 'Edit', edit_trial_session_request_path(trial_session_request)
+        td = link_to 'Destroy', trial_session_request, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Live session', new_trial_session_request_path
