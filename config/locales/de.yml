@@ -59,6 +59,9 @@ de:
         update: Aktualisieren
       versions:
         no_changes: Keine Änderungen in dieser Version
+  trial_session_requests:
+    show:
+      title: Herzlichen Dank!
   'true': Ja
   users:
     detail_inputs:

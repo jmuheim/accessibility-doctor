@@ -4,6 +4,9 @@ de:
     trial_session_request:
       duration:
         quarter_hour: Viertelstunde (15 Minuten)
+      language:
+        de: Deutsch
+        en: Englisch
     user:
       role:
         admin: Administrator

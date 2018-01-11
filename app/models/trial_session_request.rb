@@ -12,5 +12,6 @@ class TrialSessionRequest < ApplicationRecord
   validates :agree_to_terms_and_conditions, presence: true
 
   enumerize :duration, in: [:quarter_hour], default: :quarter_hour
+  enumerize :language, in: [:en, :de], default: :en
   enumerize :how_found_us, in: [:search_engine, :recommendation, :other]
 end

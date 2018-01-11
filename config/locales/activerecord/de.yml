@@ -15,18 +15,6 @@ de:
         file: Datei
         identifier: Kennung
         updated_at: Aktualisiert am
-      trial_session_request:
-        datetime: Datum und Zeit
-        duration: Dauer
-        customer_name: Ihr Name
-        customer_email: Ihre Emailadresse
-        customer_company: Ihre Firma
-        message: Persönliche Nachricht
-        how_found_us: Wie haben Sie mich gefunden?
-        agree_to_terms_and_conditions: Ich akzeptiere die AGB
-        time_zone: Ihre Zeitzone
-        url: Zu testende Website
-        description: Beschreibung
       page:
         children: Unterseiten
         content: Inhalt
@@ -42,6 +30,19 @@ de:
       paper_trail/version:
         created_at: Erstellt am
         whodunnit: Verantwortlicher
+      trial_session_request:
+        agree_to_terms_and_conditions: Ich akzeptiere die AGB
+        customer_company: Ihre Firma
+        customer_email: Ihre Emailadresse
+        customer_name: Ihr Name
+        datetime: Datum und Zeit
+        description: Beschreibung
+        duration: Dauer
+        how_found_us: Wie haben Sie mich gefunden?
+        language: Sprache
+        message: Persönliche Nachricht
+        time_zone: Ihre Zeitzone
+        url: Zu testende Website
       user:
         about: Über
         avatar: Profilbild

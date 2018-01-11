@@ -40,6 +40,9 @@ class Ability
     can :read,  Page
 
     can :create, User
+
+    can :create, TrialSessionRequest
+    can(:read, TrialSessionRequest) { |trial_session_request| trial_session_request.created_at > 100.minutes.ago }
   end
 
   def define_abilities_for_users(current_user)
@@ -68,11 +71,10 @@ class Ability
       user != current_user
     end
 
-
     can [:index, :read], Code
     can [:index, :read], Image
 
-    can :crud, TrialSessionRequest
+    can [:index, :read, :update, :delete], TrialSessionRequest
 
     can :crud, Page
 
