@@ -1,12 +1,49 @@
 = container_for @trial_session_request do
-  - if !user_signed_in? && current_user.role.admin?
+  - if user_signed_in? && current_user.role.admin?
     = headline_with_flash @trial_session_request.id
+
+    .row
+      .col-md-8
+        dl.dl-horizontal
+          - if @trial_session_request.url?
+            dt = TrialSessionRequest.human_attribute_name :url
+            dd.url = link_to @trial_session_request.url, @trial_session_request.url
+
+          dt = TrialSessionRequest.human_attribute_name :datetime
+          dd.datetime = l @trial_session_request.datetime
+          dt = TrialSessionRequest.human_attribute_name :language
+          dd.language_text = @trial_session_request.language_text
+
+          dt = TrialSessionRequest.human_attribute_name :name
+          dd.name = @trial_session_request.name
+
+          - if @trial_session_request.company?
+            dt = TrialSessionRequest.human_attribute_name :company
+            dd.company = @trial_session_request.company
+
+          dt = TrialSessionRequest.human_attribute_name :email
+          dd.email = mail_to @trial_session_request.email
+
+        - if @trial_session_request.message?
+          .about
+            h2 = TrialSessionRequest.human_attribute_name :message
+
+            pre = @trial_session_request.message
+
+      .col-md-4
+        .additional_information
+          h2 = t 'shared.show.additional_information'
+
+          == render 'details', trial_session_request: @trial_session_request
+
+    == render 'shared/show/versions', versions: @trial_session_request.versions if can?(:read, PaperTrail::Version) && @trial_session_request.versions.any?
+    == render 'shared/show/actions', resource: @trial_session_request
 
   - else
     = headline_with_flash
 
     .lead
-      p Ihre Anfrage ist erfolgreich bei mir eingetroffen und ich werde mich um ihre Bearbeitung kümmern!
+      p Ihre Anfrage ist erfolgreich bei mir eingetroffen und ich werde mich um deren Bearbeitung kümmern!
 
       p Eine Bestätigung mit allen Angaben wurde bereits per Email an Sie verschickt. In Kürze werde ich zudem persönlich mit Ihnen Kontakt aufnehmen, um die weiteren Schritte bekannt zu geben.
 
@@ -14,7 +51,7 @@
 
     h2 Und in der Zwischenzeit...
 
-    p Ich gebe mir Mühe, Anfragen so rasch als möglich zu bearbeiten. Trotzdem kann es etwas dauern, bis Sie von mir hören. Bis dahin sollten Sie die Chance nutzen, sich noch etwas auf die Session vorzubereiten, um optimal profitieren zu können!
+    p Ich gebe mir Mühe, Anfragen so rasch als möglich zu bearbeiten. Trotzdem kann es etwas dauern, bis Sie von mir hören. Bis dahin sollten Sie die Chance nutzen, sich etwas vorzubereiten, um von der kostenlosen Session möglichst viel profitieren zu können!
 
     .row
       .col-md-6
@@ -34,12 +71,12 @@
 
         p Im «ADG» finden Entwickler alles, was sie wissen müssen, um zugängliche Websites zu entwickeln.
 
-        p Ach ja: Ich bin der Initiator des «ADG» und die meisten Inhalte stammen von mir.
+        p Ach ja, kleine Notiz am Rande: ich bin der Initiator des «ADG» und die meisten Inhalte stammen von mir.
 
       .col-md-6
         h3
           => icon 'stethoscope', type: :fa
-          | Machen Sie sich mit der Video-Konferenz-Software Zoom.us bekannt!
+          | Machen Sie sich mit der Video-Konferenz-Software Zoom.us vertraut!
 
         p Um mit meinen Kunden live in Kontakt zu treten, verwende ich mit grosser Freude die Software #{link_to 'Zoom.us', 'https://zoom.us/'} (sozusagen ein "besseres Skype").
 
@@ -47,7 +84,7 @@
 
         ul
           li Sehr gute Audio- und Video-Qualität
-          li Der Maus-Cursor kann visuell hervorgehoben werden
+          li Der Präsentator (ich) kann die Sicht auf seinen Computer-Bildschirm freigeben - ein Grundpfeiler meiner live Sessions!
           li Die komplette Session kann als Video-Datei aufgenommen werden
 
         p Probieren Sie Zoom.us aus, um optimal für die Session gewappnet zu sein!

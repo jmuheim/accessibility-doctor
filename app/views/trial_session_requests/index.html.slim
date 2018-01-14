@@ -1,21 +1,7 @@
-h1 Listing trial_session_requests
+= headline_with_flash TrialSessionRequest.model_name.human count: :other
 
-table
-  thead
-    tr
-      th Date time
-      th
-      th
-      th
+/ Would be nice to do something like `= render @trial_session_requests, wrapper: true`, see http://stackoverflow.com/questions/22120292
+== render 'trial_session_requests', trial_session_requests: @trial_session_requests, q: @q
 
-  tbody
-    - @trial_session_requests.each do |trial_session_request|
-      tr
-        td = trial_session_request.datetime
-        td = link_to 'Show', trial_session_request
-        td = link_to 'Edit', edit_trial_session_request_path(trial_session_request)
-        td = link_to 'Destroy', trial_session_request, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Live session', new_trial_session_request_path
+h2.sr-only = t 'actions.actions'
+== render 'shared/index/create_resource', resource: TrialSessionRequest

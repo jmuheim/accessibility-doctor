@@ -13,6 +13,18 @@ en:
         navigation_title: Appears in the menu and breadcrumbs. Leave empty to use title.
         notes: Only for internal usage (not publicly viewable).
         title: Appears as main heading when displaying the page.
+      trial_session_request:
+        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/pages/1">Allgemeine Geschäftsbedingungen</a>'
+        datetime: Sagen Sie mir, wann es Ihnen innerhalb der nächsten 3 Monate passen würde. Falls notwendig, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
+        description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
+        duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
+        email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
+        how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
+        humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies schützt mich vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href=''https://de.wikipedia.org/wiki/CAPTCHA''>CAPTCHA (Wikipedia)</a>'
+        language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
+        message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
+        time_zone: Ich wohne in der Nähe von Zürich (Schweiz), somit ist meine Zeitzone GMT+1.
+        url: Die Angabe einer URL erlaubt mir, die Session optimal zu planen.
       user:
         about: Write something about you (biography, interests, hobbies...). You can use Pandoc Markdown to add basic formatting.
         password_confirmation: Retype your password to avoid typing errors.
@@ -41,6 +53,9 @@ en:
         remove_file: Remove existing %{attribute} file
         reset_selection: Reset %{attribute} file selection
     'no': 'No'
+    placeholders:
+      trial_session_request:
+        url: http://www.example.com
     required:
       mark: "*"
       text: required

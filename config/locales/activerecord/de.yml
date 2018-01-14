@@ -31,16 +31,16 @@ de:
         created_at: Erstellt am
         whodunnit: Verantwortlicher
       trial_session_request:
-        agree_to_terms_and_conditions: Ich akzeptiere die AGB
-        customer_company: Ihre Firma
-        customer_email: Ihre Emailadresse
-        customer_name: Ihr Name
+        agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
+        company: Firma
         datetime: Datum und Zeit
         description: Beschreibung
         duration: Dauer
+        email: Email
         how_found_us: Wie haben Sie mich gefunden?
         language: Sprache
         message: Persönliche Nachricht
+        name: Name
         time_zone: Ihre Zeitzone
         url: Zu testende Website
       user:

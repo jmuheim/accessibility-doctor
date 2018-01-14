@@ -60,6 +60,12 @@ de:
       versions:
         no_changes: Keine Änderungen in dieser Version
   trial_session_requests:
+    form:
+      additional_details: Weitere Details
+      captcha: Sicherheitsabfrage (CAPTCHA)
+      personal_details: Ihre Personalien
+      session_details: Details zur gewünschten Session
+      terms_and_conditions: Allgemeine Geschäftsbedingungen
     show:
       title: Herzlichen Dank!
   'true': Ja

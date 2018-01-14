@@ -4,6 +4,10 @@ de:
     trial_session_request:
       duration:
         quarter_hour: Viertelstunde (15 Minuten)
+      how_found_us:
+        other: Anderes
+        recommendation: Empfehlung
+        search_engine: Suchmaschine (z.B. Google)
       language:
         de: Deutsch
         en: Englisch

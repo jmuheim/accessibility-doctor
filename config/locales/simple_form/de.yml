@@ -14,11 +14,11 @@ de:
         notes: Nur für den internen Gebrauch bestimmt (nicht öffentlich einsehbar).
         title: Erscheint als Haupt-Überschrift beim Anzeigen der Seite.
       trial_session_request:
-        agree_to_terms_and_conditions: Lesen Sie die <a href="/de/pages/1">Allgemeinen Geschäftsbedingungen</a>!
-        customer_email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
-        datetime: Geben Sie ein für Sie passendes Datum mit Zeit an. Falls Ihr Vorschlag für mich nicht passt, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
+        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/pages/1">Allgemeine Geschäftsbedingungen</a>'
+        datetime: Sagen Sie mir, wann es Ihnen innerhalb der nächsten 3 Monate passen würde. Falls notwendig, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
         description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
+        email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
         how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
         humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies schützt mich vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href=''https://de.wikipedia.org/wiki/CAPTCHA''>CAPTCHA (Wikipedia)</a>'
         language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.

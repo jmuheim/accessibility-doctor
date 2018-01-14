@@ -59,6 +59,15 @@ en:
         update: Update
       versions:
         no_changes: No changes in this version
+  trial_session_requests:
+    form:
+      additional_details: Additional details
+      captcha: Security question (CAPTCHA)
+      personal_details: Personal details
+      session_details: Details zur gewünschten Session
+      terms_and_conditions: Terms and conditions
+    show:
+      title: Herzlichen Dank!
   'true': 'Yes'
   users:
     detail_inputs:

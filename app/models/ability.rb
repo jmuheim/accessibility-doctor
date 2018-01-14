@@ -74,7 +74,7 @@ class Ability
     can [:index, :read], Code
     can [:index, :read], Image
 
-    can [:index, :read, :update, :delete], TrialSessionRequest
+    can [:index, :read, :update, :destroy], TrialSessionRequest
 
     can :crud, Page
 

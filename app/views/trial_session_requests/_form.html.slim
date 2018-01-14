@@ -4,17 +4,17 @@
 
   = panel do |panel|
     = panel.heading do
-      | Ihre Personalien
+      = t '.personal_details'
 
     = panel.body do
-      = f.input :customer_name
-      = f.input :customer_company
-      = f.input :customer_email
+      = f.input :name
+      = f.input :company
+      = f.input :email
       = f.input :language
 
   = panel do |panel|
     = panel.heading do
-      | Details zur Session
+      = t '.session_details'
 
     = panel.body do
       = f.input :url
@@ -24,7 +24,7 @@
 
   = panel do |panel|
     = panel.heading do
-      | Weitere Details
+      = t '.additional_details'
 
     = panel.body do
       = f.input :how_found_us
@@ -32,14 +32,14 @@
 
   = panel do |panel|
     = panel.heading do
-      | Allgemeine Geschäftsbedingungen (AGB)
+      = t '.terms_and_conditions'
 
     = panel.body do
-      = f.input :agree_to_terms_and_conditions, as: :select
+      = f.input :agree_to_terms_and_conditions, default: false, required: false
 
   = panel do |panel|
     = panel.heading do
-      | Sicherheitsabfrage (CAPTCHA)
+      = t '.captcha'
 
     = panel.body do
       = f.input :humanizer_answer, label: @trial_session_request.humanizer_question
