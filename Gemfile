@@ -27,6 +27,8 @@ gem 'font-awesome-rails' # The iconic font and CSS toolkit
 
 gem 'validate_url'
 
+gem 'time_splitter'
+
 gem 'humanizer' #
 
 gem 'acts_as_tree' # Extends ActiveRecord to add simple support for organizing items into parent–children relationships

@@ -9,6 +9,11 @@ class TrialSessionRequestsController < ApplicationController
     respond_with @trial_session_request
   end
 
+  def update
+    @trial_session_request.update(trial_session_request_params)
+    respond_with @trial_session_request
+  end
+
   private
 
   def trial_session_request_params

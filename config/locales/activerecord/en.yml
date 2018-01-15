@@ -31,18 +31,20 @@ en:
         created_at: Created at
         whodunnit: Whodunnit
       trial_session_request:
-        agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
-        company: Firma
-        datetime: Datum und Zeit
-        description: Beschreibung
-        duration: Dauer
+        agree_to_terms_and_conditions: Yes, I accept the General Terms and Conditions!
+        company: Company
+        datetime: Date and Time
+        datetime_date: Date
+        datetime_time: Time
+        description: Description
+        duration: Duration
         email: Email
-        how_found_us: Wie haben Sie mich gefunden?
-        language: Sprache
-        message: Persönliche Nachricht
+        how_found_us: How did you find me?
+        language: Language
+        message: Personal message
         name: Name
-        time_zone: Ihre Zeitzone
-        url: Zu testende Website
+        time_zone: Time zone
+        url: Website to be tested
       user:
         about: About
         avatar: Profile picture
@@ -78,8 +80,8 @@ en:
         one: Version
         other: Versions
       trial_session_request:
-        one: Antrag für Demo-Session
-        other: Anträge für Demo-Sessions
+        one: Trial Session Request
+        other: Trial Session Requests
       user:
         one: User
         other: Users

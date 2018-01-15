@@ -34,6 +34,8 @@ de:
         agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
         company: Firma
         datetime: Datum und Zeit
+        datetime_date: Datum
+        datetime_time: Zeit
         description: Beschreibung
         duration: Dauer
         email: Email
@@ -41,7 +43,7 @@ de:
         language: Sprache
         message: Persönliche Nachricht
         name: Name
-        time_zone: Ihre Zeitzone
+        time_zone: Zeitzone
         url: Zu testende Website
       user:
         about: Über
