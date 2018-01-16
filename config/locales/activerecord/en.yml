@@ -33,9 +33,7 @@ en:
       trial_session_request:
         agree_to_terms_and_conditions: Yes, I accept the General Terms and Conditions!
         company: Company
-        datetime: Date and Time
-        datetime_date: Date
-        datetime_time: Time
+        availability: Availability
         description: Description
         duration: Duration
         email: Email

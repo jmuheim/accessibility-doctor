@@ -9,8 +9,8 @@
             dt = TrialSessionRequest.human_attribute_name :url
             dd.url = link_to @trial_session_request.url, @trial_session_request.url
 
-          dt = TrialSessionRequest.human_attribute_name :datetime
-          dd.datetime = l @trial_session_request.datetime
+          dt = TrialSessionRequest.human_attribute_name :availability
+          dd.availability = l @trial_session_request.availability
           dt = TrialSessionRequest.human_attribute_name :language
           dd.language_text = @trial_session_request.language_text
 

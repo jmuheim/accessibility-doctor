@@ -89,7 +89,8 @@ ActiveRecord::Schema.define(version: 20180109125940) do
   end
 
   create_table "trial_session_requests", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "datetime"
+    t.datetime "starts_at"
+    t.text "availability"
     t.string "time_zone"
     t.string "language"
     t.string "name"

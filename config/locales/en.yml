@@ -64,7 +64,7 @@ en:
       additional_details: Additional details
       captcha: Security question (CAPTCHA)
       personal_details: Personal details
-      session_details: Details of the desired session
+      session_details: Details about the desired session
       terms_and_conditions: Terms and conditions
     show:
       title: Herzlichen Dank!

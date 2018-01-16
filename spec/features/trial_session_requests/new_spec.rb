@@ -15,9 +15,9 @@ describe 'Creating trial session request' do
     fill_in 'trial_session_request_email',   with: 'hans@muster-webdesign.com'
     select 'German', from: 'trial_session_request_language'
 
-    expect(page).to have_css 'legend h2', text: 'Details of the desired session'
-    fill_in 'trial_session_request_datetime_date',    with: '16/01/2018'
-    fill_in 'trial_session_request_datetime_time',    with: '16:00'
+    expect(page).to have_css 'legend h2', text: 'Details about the desired session'
+    fill_in 'trial_session_request_url',          with: 'www.muster-webdesign.com'
+    fill_in 'trial_session_request_availability', with: "Upcoming Thursday, 20th of February, around 2pm to 4pm.\n\nOr upcoming Friday, 21th of February, around 9am to 12am."
     select '(GMT+02:00) Athens', from: 'trial_session_request_time_zone'
     expect(page).to have_css 'select#trial_session_request_duration[disabled]'
 

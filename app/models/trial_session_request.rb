@@ -9,9 +9,10 @@ class TrialSessionRequest < ApplicationRecord
 
   has_paper_trail
 
-  validates :datetime, presence: true, inclusion: { in: (Date.today..Date.today + 3.month) }
+  validates :availability, presence: true
   validates :time_zone, presence: true
   validates :name, presence: true
+  validates :company, presence: true
   validates :email, presence: true
   validates :how_found_us, presence: true
   validates :agree_to_terms_and_conditions, presence: true

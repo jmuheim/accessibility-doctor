@@ -14,17 +14,17 @@ en:
         notes: Only for internal usage (not publicly viewable).
         title: Appears as main heading when displaying the page.
       trial_session_request:
-        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/pages/1">Allgemeine Geschäftsbedingungen</a>'
-        datetime: Sagen Sie mir, wann es Ihnen innerhalb der nächsten 3 Monate passen würde. Falls notwendig, werde ich Ihnen bei meiner Kontaktaufnahme Alternativen vorschlagen.
-        description: Weitere Details und Anmerkungen, z.B. Informationen über die zu testende Website. Aber auch alternative Terminvorschläge oder Fragen zur potenziellen weiteren Zusammenarbeit.
-        duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
-        email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
-        how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
-        humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies schützt mich vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href=''https://de.wikipedia.org/wiki/CAPTCHA''>CAPTCHA (Wikipedia)</a>'
-        language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
-        message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
-        time_zone: Ich wohne in der Nähe von Zürich (Schweiz), somit ist meine Zeitzone GMT+1.
-        url: Die Angabe einer URL erlaubt mir, die Session optimal zu planen.
+        agree_to_terms_and_conditions: 'Please read carefully: <a href="/de/pages/1">General Terms and Conditions</a>'
+        availability: Please give me one or more time frames, which would suit you for the 15 minute session. With a little luck I will be able to confirm one of them when I contact you; otherwise I will suggest alternatives.
+        description: Further details and comments, such as information about the website to be tested, as well as questions about accessibility or suggestions for potential future collaboration.
+        duration: The first session always lasts 15 minutes and is 100% free.
+        email: Will only be used for contacting you and will never be passed on to third parties.
+        how_found_us: You are welcome to describe this in more detail in the following field.
+        humanizer_answer: 'By answering this question you make yourself identifiable as a human being; this protects me from automated computer queries (spam). More information here: <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
+        language: In which language would you like to communicate? My mother tongue is Swiss German, but I also speak fluent English.
+        message: I am looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
+        time_zone: Please name your time zone so that I can take into account potential time differences between you and me (Switzerland, GMT+1).
+        url: Entering your website address allows me to plan the session optimally.
       user:
         about: Write something about you (biography, interests, hobbies...). You can use Pandoc Markdown to add basic formatting.
         password_confirmation: Retype your password to avoid typing errors.

@@ -4,7 +4,7 @@ class TrialSessionRequestsController < ApplicationController
   respond_to :html
 
   def create
-    TrialSessionRequestMailer.thank_you_email(@user).deliver_now if @trial_session_request.save
+    TrialSessionRequestMailer.thank_you_email(@trial_session_request).deliver_now if @trial_session_request.save
 
     respond_with @trial_session_request
   end
@@ -17,7 +17,8 @@ class TrialSessionRequestsController < ApplicationController
   private
 
   def trial_session_request_params
-    params.require(:trial_session_request).permit(:datetime,
+    params.require(:trial_session_request).permit(:availability,
+                                                  :starts_at,
                                                   :time_zone,
                                                   :name,
                                                   :email,

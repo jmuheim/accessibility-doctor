@@ -33,9 +33,7 @@ de:
       trial_session_request:
         agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
         company: Firma
-        datetime: Datum und Zeit
-        datetime_date: Datum
-        datetime_time: Zeit
+        availability: Verfügbarkeit
         description: Beschreibung
         duration: Dauer
         email: Email

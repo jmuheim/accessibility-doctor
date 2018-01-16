@@ -4,8 +4,8 @@ tr id=dom_id(trial_session_request)
   td.name     = trial_session_request.name
   td.company  = trial_session_request.company
   td.email    = mail_to trial_session_request.email
-  td.datetime
-    = l trial_session_request.datetime
+  td.availability
+    = l trial_session_request.availability
     =< "(#{trial_session_request.time_zone})"
   td.language = trial_session_request.language_text
 
