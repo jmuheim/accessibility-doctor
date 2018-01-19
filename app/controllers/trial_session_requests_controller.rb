@@ -6,7 +6,7 @@ class TrialSessionRequestsController < ApplicationController
   def create
     if @trial_session_request.save
       TrialSessionRequestMailer.thank_you_email(@trial_session_request).deliver_now
-      # TrialSessionRequestMailer.notification_email(@trial_session_request).deliver_now
+      TrialSessionRequestMailer.new_request_email(@trial_session_request).deliver_now
     end
 
     respond_with @trial_session_request

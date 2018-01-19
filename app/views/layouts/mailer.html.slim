@@ -1,3 +1,25 @@
-html
+doctype html
+html lang=I18n.locale
+  head
+    meta content="text/html; charset=UTF-8" http-equiv="Content-Type"
   body
-    = yield
+    == yield
+
+    p
+      strong Joshua Muheim
+      br
+      = t '.profession'
+
+    hr
+
+    p
+      cite
+        strong> = t('org.name')
+        | - #{t('app.slogan')}
+
+    address
+      strong> Email:
+      = mail_to 'help@accessibility-doctor.com'
+      br
+      strong> Web:
+      = link_to 'www.accessibility-doctor.com', root_url

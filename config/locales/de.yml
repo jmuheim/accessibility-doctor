@@ -1,9 +1,9 @@
 ---
 de:
   app:
-    acronym: Base
-    name: Base Project
-    slogan: Vorkonfiguriertes grundlegendes zugängliches Rails Projekt. Fork erstellen!
+    acronym: A11y-Doc
+    name: Accessibility Doctor
+    slogan: Verständliche und pragmatische Full Stack Accessibility Beratung.
   buttons:
     save: Speichern
   'false': Nein
@@ -11,12 +11,12 @@ de:
     news:
       title: Letzte Neuigkeiten
     show:
-      title: Willkommen auf Base!
+      title: Willkommen auf Accessibility Doctor!
     statistics:
       number_of_resource: Anzahl %{resource}
       title: Statistiken
   org:
-    name: MuheimWebdesign
+    name: Accessibility Doctor
   pages:
     browsing:
       browsing: Blättern
@@ -59,11 +59,7 @@ de:
         update: Aktualisieren
       versions:
         no_changes: Keine Änderungen in dieser Version
-  trial_session_request_mailer:
-    thank_you_email:
-      thank_you:
-        subject: Vielen Dank für Ihre Anfrage bezüglich einer Demo-Session mit Accessibility-Doctor.com!
-  trial_session_requests:
+  trial_session:
     form:
       additional_details: Weitere Details
       captcha: Sicherheitsabfrage (CAPTCHA)
@@ -72,6 +68,22 @@ de:
       terms_and_conditions: Allgemeine Geschäftsbedingungen
     show:
       title: Herzlichen Dank!
+  trial_session_request_mailer:
+    new_request:
+      subject: Neue Anfrage für eine Probe-Session
+    thank_you:
+      subject: Thank you for your request for a demo session with Accessibility-Doctor.com
+    thank_you_email:
+      subject: Vielen Dank für Ihre Anfrage bezüglich einer Demo-Session mit Accessibility-Doctor.com
+  trial_session_requests:
+    form:
+      additional_details: Additional details
+      captcha: Security question (CAPTCHA)
+      personal_details: Personal details
+      session_details: Details about the desired session
+      terms_and_conditions: Terms and conditions
+    show:
+      title: Thank you very much!
   'true': Ja
   users:
     detail_inputs:
