@@ -1,6 +1,4 @@
 class TrialSessionRequestMailer < ApplicationMailer
-  helper MarkdownHelper
-
   def thank_you(trial_session_request)
     @trial_session_request = trial_session_request
 
@@ -10,7 +8,7 @@ class TrialSessionRequestMailer < ApplicationMailer
   end
 
   def new_request(trial_session_request)
-      @trial_session_request = trial_session_request
-      mail(to: "Accessibility-Doctor.com <help@accessibility-doctor.com>", subject: t('.subject'))
+    @trial_session_request = trial_session_request
+    mail(to: Rails.application.secrets.mailer_from, subject: 'New request for a trial session')
   end
 end

@@ -19,7 +19,7 @@ html lang=I18n.locale
 
     address
       strong> Email:
-      = mail_to 'help@accessibility-doctor.com'
+      = mail_to Rails.application.secrets.mailer_from
       br
       strong> Web:
       = link_to 'www.accessibility-doctor.com', root_url

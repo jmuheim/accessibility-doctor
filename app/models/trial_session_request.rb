@@ -1,9 +1,6 @@
 class TrialSessionRequest < ApplicationRecord
   extend Enumerize
   include Humanizer
-  extend TimeSplitter::Accessors
-
-  split_accessor :datetime
 
   require_human_on :create
 

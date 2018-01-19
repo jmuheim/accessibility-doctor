@@ -3,7 +3,7 @@ en:
   app:
     acronym: A11y-Doc
     name: Accessibility Doctor
-    slogan: Comprehensible and pragmatic full stack accessibility consulting.
+    slogan: Comprehensible and pragmatic accessibility consulting.
   buttons:
     save: Save
   'false': 'No'
@@ -69,12 +69,8 @@ en:
     show:
       title: Herzlichen Dank!
   trial_session_request_mailer:
-    new_request:
-      subject: New request for a trial session
     thank_you:
       subject: Thank you for your request for a demo session with Accessibility-Doctor.com
-    thank_you_email:
-      subject: Vielen Dank für Ihre Anfrage bezüglich einer Demo-Session mit Accessibility-Doctor.com
   trial_session_requests:
     form:
       additional_details: Additional details

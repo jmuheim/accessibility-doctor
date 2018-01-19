@@ -5,8 +5,8 @@ class TrialSessionRequestsController < ApplicationController
 
   def create
     if @trial_session_request.save
-      TrialSessionRequestMailer.thank_you_email(@trial_session_request).deliver_now
-      TrialSessionRequestMailer.new_request_email(@trial_session_request).deliver_now
+      TrialSessionRequestMailer.thank_you(@trial_session_request).deliver_now
+      TrialSessionRequestMailer.new_request(@trial_session_request).deliver_now
     end
 
     respond_with @trial_session_request
@@ -37,10 +37,10 @@ class TrialSessionRequestsController < ApplicationController
   end
 
   def add_breadcrumbs
-    add_breadcrumb TrialSessionRequest.model_name.human(count: :other), trial_session_requests_path                    if [:index, :new, :create, :show].include? action_name.to_sym
-    add_breadcrumb @trial_session_request.id.to_s,                            trial_session_request_path(@trial_session_request)      if [:show, :edit, :update].include? action_name.to_sym
-    add_breadcrumb t('actions.new'),                            new_trial_session_request_path                 if [:new,  :create].include?        action_name.to_sym
-    add_breadcrumb t('actions.edit'),                           edit_trial_session_request_path(@trial_session_request) if [:edit, :update].include?        action_name.to_sym
+    add_breadcrumb TrialSessionRequest.model_name.human(count: :other), trial_session_requests_path                             if [:index, :new, :create, :show].include? action_name.to_sym
+    add_breadcrumb @trial_session_request.id.to_s,                      trial_session_request_path(@trial_session_request)      if [:show, :edit, :update].include?        action_name.to_sym
+    add_breadcrumb t('actions.new'),                                    new_trial_session_request_path                          if [:new,  :create].include?               action_name.to_sym
+    add_breadcrumb t('actions.edit'),                                   edit_trial_session_request_path(@trial_session_request) if [:edit, :update].include?               action_name.to_sym
   end
 
   def authenticate_user?

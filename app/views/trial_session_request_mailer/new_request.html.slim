@@ -4,6 +4,7 @@ p #{@trial_session_request.name} from #{@trial_session_request.company} has requ
 
 p The client specified the following availability:
 
-blockquote = markdown @trial_session_request.availability
+blockquote
+  pre = @trial_session_request.availability
 
 p Please #{link_to 'act upon the request', trial_session_request_url(@trial_session_request, locale: :de)} soon!

@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "Accessibility-Doctor.com <help@accessibility-doctor.com>"
+  default from: Rails.application.secrets.mailer_from
   layout 'mailer'
 end
 
