@@ -42,7 +42,7 @@ en:
         message: Personal message
         name: Name
         time_zone: Time zone
-        url: Website to be tested
+        url: Website
       user:
         about: About
         avatar: Profile picture

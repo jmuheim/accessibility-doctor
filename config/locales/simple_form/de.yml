@@ -24,7 +24,7 @@ de:
         language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
         message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
         time_zone: Bitte nennen Sie Ihre Zeitzone, damit ich potenzielle Zeitunterschiede zwischen Ihnen und mir (Schweiz, GMT+1) berücksichtigen kann.
-        url: Die Angabe Ihrer Website-Adresse erlaubt mir, die Session optimal zu planen.
+        url: Die Angabe der zu testenden Website erlaubt mir, die Session optimal zu planen. Wir können aber auch adhoc eine Website wählen.
       user:
         about: Schreib etwas über dich (Biographie, Interessen, Hobbies...). Du kannst Pandoc Markdown verwenden zum Formatieren.
         password_confirmation: Gib dein Passwort nochmal ein, um Tippfehler zu vermeiden.

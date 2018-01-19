@@ -24,7 +24,7 @@ en:
         language: In which language would you like to communicate? My mother tongue is Swiss German, but I also speak fluent English.
         message: I am looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
         time_zone: Please name your time zone so that I can take into account potential time differences between you and me (Switzerland, GMT+1).
-        url: Entering your website address allows me to plan the session optimally.
+        url: Specifying the website to be tested allows me to plan the session optimally, but we can also select a website ad hoc.
       user:
         about: Write something about you (biography, interests, hobbies...). You can use Pandoc Markdown to add basic formatting.
         password_confirmation: Retype your password to avoid typing errors.

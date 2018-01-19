@@ -12,7 +12,7 @@ FactoryBot.define do
     how_found_us 'other'
     notes 'Trial Session Request notes'
     agree_to_terms_and_conditions true
-    humanizer_question_id 16
-    humanizer_answer 5
+    humanizer_question_id '16'
+    humanizer_answer '5'
   end
 end
