@@ -39,5 +39,13 @@ describe 'Creating trial session request' do
     click_button 'Create Trial Session Request'
 
     expect(page).to have_flash 'Trial Session Request was successfully created.'
+
+    expect(unread_emails_for('hans@muster-webdesign.com').size).to eq 1
+    expect(last_email_sent).to be_delivered_from("Accessibility-Doctor.com <help@accessibility-doctor.com>")
+    expect(last_email_sent).to be_delivered_to("Hans Muster <hans@muster-webdesign.com>")
+    expect(last_email_sent).to have_subject('Thank you for your request for a demo session with Accessibility-Doctor.com!')
+    expect(last_email_sent).to have_body_text('This is plain text')
+    expect(last_email_sent).to have_html_body("<!DOCTYPE html>\n<html><body>\n<meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\">\n<p>This is plain text</p>\n</body></html>\n")
+    expect(last_email_sent).to have_text_body('This is plain text')
   end
 end

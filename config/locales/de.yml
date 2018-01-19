@@ -59,6 +59,10 @@ de:
         update: Aktualisieren
       versions:
         no_changes: Keine Änderungen in dieser Version
+  trial_session_request_mailer:
+    thank_you_email:
+      thank_you:
+        subject: Vielen Dank für Ihre Anfrage bezüglich einer Demo-Session mit Accessibility-Doctor.com!
   trial_session_requests:
     form:
       additional_details: Weitere Details

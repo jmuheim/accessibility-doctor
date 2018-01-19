@@ -23,7 +23,7 @@ de:
         humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies schützt mich vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
         language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
         message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
-        time_zone: 'Bitte nennen Sie Ihre Zeitzone, damit ich potenzielle Zeitunterschiede zwischen Ihnen und mir (Schweiz, GMT+1) berücksichtigen kann.'
+        time_zone: Bitte nennen Sie Ihre Zeitzone, damit ich potenzielle Zeitunterschiede zwischen Ihnen und mir (Schweiz, GMT+1) berücksichtigen kann.
         url: Die Angabe Ihrer Website-Adresse erlaubt mir, die Session optimal zu planen.
       user:
         about: Schreib etwas über dich (Biographie, Interessen, Hobbies...). Du kannst Pandoc Markdown verwenden zum Formatieren.

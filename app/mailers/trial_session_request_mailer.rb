@@ -1,6 +1,9 @@
 class TrialSessionRequestMailer < ApplicationMailer
-  def thank_you_email(user)
-    @user = user
-    mail(to: "\"#{@user.name}\" <#{@user.email}>", subject: 'Welcome to My Awesome Site')
+  helper MarkdownHelper
+  helper ApplicationHelper
+
+  def thank_you_email(trial_session_request)
+    @trial_session_request = trial_session_request
+    mail(to: "\"#{@trial_session_request.name}\" <#{@trial_session_request.email}>", subject: t('.thank_you.subject'))
   end
 end

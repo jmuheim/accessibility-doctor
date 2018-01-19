@@ -32,8 +32,8 @@ de:
         whodunnit: Verantwortlicher
       trial_session_request:
         agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
-        company: Firma
         availability: Verfügbarkeit
+        company: Firma
         description: Beschreibung
         duration: Dauer
         email: Email
@@ -78,8 +78,8 @@ de:
         one: Version
         other: Versionen
       trial_session_request:
-        one: Antrag für Demo-Session
-        other: Anträge für Demo-Sessions
+        one: Antrag für Probe-Session
+        other: Anträge für Probe-Sessions
       user:
         one: Benutzer
         other: Benutzer

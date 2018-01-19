@@ -30,24 +30,25 @@
       = f.input :how_found_us
       = f.input :message
 
-  = panel do |panel|
-    = panel.heading do
-      = t '.terms_and_conditions'
+  - if f.object.new_record?
+    = panel do |panel|
+      = panel.heading do
+        = t '.terms_and_conditions'
 
-    = panel.body do
-      = f.input :agree_to_terms_and_conditions, default: false, required: false
+      = panel.body do
+        = f.input :agree_to_terms_and_conditions, default: false, required: false
 
-  = panel do |panel|
-    = panel.heading do
-      = t '.captcha'
+    = panel do |panel|
+      = panel.heading do
+        = t '.captcha'
 
-    = panel.body do
-      = f.input :humanizer_answer, label: @trial_session_request.humanizer_question
+      = panel.body do
+        = f.input :humanizer_answer, label: @trial_session_request.humanizer_question
 
-      - if Rails.env.test?
-        = f.hidden_field :humanizer_question_id, value: 16
-      - else
-        = f.hidden_field :humanizer_question_id
+        - if Rails.env.test?
+          = f.hidden_field :humanizer_question_id, value: 16
+        - else
+          = f.hidden_field :humanizer_question_id
 
   .row
     .col-md-12

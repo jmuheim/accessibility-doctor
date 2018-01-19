@@ -9,8 +9,6 @@
             dt = TrialSessionRequest.human_attribute_name :url
             dd.url = link_to @trial_session_request.url, @trial_session_request.url
 
-          dt = TrialSessionRequest.human_attribute_name :availability
-          dd.availability = l @trial_session_request.availability
           dt = TrialSessionRequest.human_attribute_name :language
           dd.language_text = @trial_session_request.language_text
 
@@ -24,11 +22,20 @@
           dt = TrialSessionRequest.human_attribute_name :email
           dd.email = mail_to @trial_session_request.email
 
-        - if @trial_session_request.message?
-          .about
-            h2 = TrialSessionRequest.human_attribute_name :message
 
+        .availability
+          h2 = TrialSessionRequest.human_attribute_name :availability
+          pre = @trial_session_request.availability
+
+        - if @trial_session_request.message?
+          .message
+            h2 = TrialSessionRequest.human_attribute_name :message
             pre = @trial_session_request.message
+
+        - if @trial_session_request.notes?
+          .notes
+            h2 = TrialSessionRequest.human_attribute_name :notes
+            pre = @trial_session_request.notes
 
       .col-md-4
         .additional_information
@@ -43,50 +50,16 @@
     = headline_with_flash
 
     .lead
-      p Ihre Anfrage ist erfolgreich bei mir eingetroffen und ich werde mich um deren Bearbeitung kümmern!
-
-      p Eine Bestätigung mit allen Angaben wurde bereits per Email an Sie verschickt. In Kürze werde ich zudem persönlich mit Ihnen Kontakt aufnehmen, um die weiteren Schritte bekannt zu geben.
+      == render 'show_lead'
 
     hr
 
-    h2 Und in der Zwischenzeit...
-
-    p Ich gebe mir Mühe, Anfragen so rasch als möglich zu bearbeiten. Trotzdem kann es etwas dauern, bis Sie von mir hören. Bis dahin sollten Sie die Chance nutzen, sich etwas vorzubereiten, um von der kostenlosen Session möglichst viel profitieren zu können!
+    == render 'show_in_the_meantime'
 
     .row
       .col-md-6
-        h3
-          => icon 'thumbs-up', type: :fa
-          | Schauen Sie sich unsere Angebote genauer an!
-
-        p Beratung per Video-Konferenz ist nur eine von vielen Möglichkeiten, wie ich Sie zu Themen rund um Barrierefreiheit unterstützen kann.
-
-        p Schauen Sie sich meine Dienstleistungsangebote an, so dass wir offene Fragen (und eine potenzielle Zusammenarbeit) gleich während der geplanten Session klären können!
-
-        h3
-          => icon 'grav', type: :fa
-          | Lesen Sie im «Accessibility Developer Guide»!
-
-        p Der #{link_to '«Accessibility Developer Guide (ADG)»', 'http://www.accessibility-developer-guide.com'} ist die umfassende Online-Plattform zur Entwicklung zugänglicher Websites - von Entwicklern, für Entwickler.
-
-        p Im «ADG» finden Entwickler alles, was sie wissen müssen, um zugängliche Websites zu entwickeln.
-
-        p Ach ja, kleine Notiz am Rande: ich bin der Initiator des «ADG» und die meisten Inhalte stammen von mir.
+        == render 'show_take_a_look'
+        == render 'show_read_the_adg'
 
       .col-md-6
-        h3
-          => icon 'stethoscope', type: :fa
-          | Machen Sie sich mit der Video-Konferenz-Software Zoom.us vertraut!
-
-        p Um mit meinen Kunden live in Kontakt zu treten, verwende ich mit grosser Freude die Software #{link_to 'Zoom.us', 'https://zoom.us/'} (sozusagen ein "besseres Skype").
-
-        p Zoom.us ist sowohl für Desktop-Computer als auch Mobile-Geräte kostenlos verfügbar und bietet hervorragende Funktionen für Video-Konferenzen, etwa:
-
-        ul
-          li Sehr gute Audio- und Video-Qualität
-          li Der Präsentator (ich) kann die Sicht auf seinen Computer-Bildschirm freigeben - ein Grundpfeiler meiner live Sessions!
-          li Die komplette Session kann als Video-Datei aufgenommen werden
-
-        p Probieren Sie Zoom.us aus, um optimal für die Session gewappnet zu sein!
-
-        p Wer übrigens keine zusätzliche Software installieren will (oder kann): Zoom.us kann auf Desktop-Computern auch komplett im Browser ausgeführt werden!
+        == render 'show_get_familiar_with_zoom'

@@ -59,6 +59,10 @@ en:
         update: Update
       versions:
         no_changes: No changes in this version
+  trial_session_request_mailer:
+    thank_you_email:
+      thank_you:
+        subject: Thank you for your request for a demo session with Accessibility-Doctor.com!
   trial_session_requests:
     form:
       additional_details: Additional details
@@ -67,7 +71,7 @@ en:
       session_details: Details about the desired session
       terms_and_conditions: Terms and conditions
     show:
-      title: Herzlichen Dank!
+      title: Thank you very much!
   'true': 'Yes'
   users:
     detail_inputs:

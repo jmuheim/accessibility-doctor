@@ -35,6 +35,10 @@ gem 'acts_as_tree' # Extends ActiveRecord to add simple support for organizing i
 
 gem 'acts_as_list' # An ActiveRecord plugin for managing lists
 
+gem 'premailer-rails' # CSS styled emails without the hassle
+
+gem 'rspec-mail-matchers'
+
 # jQuery
 gem 'jquery-rails'
 gem 'jquery-ui-rails' # jQuery UI components

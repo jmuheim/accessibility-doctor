@@ -32,8 +32,8 @@ en:
         whodunnit: Whodunnit
       trial_session_request:
         agree_to_terms_and_conditions: Yes, I accept the General Terms and Conditions!
-        company: Company
         availability: Availability
+        company: Company
         description: Description
         duration: Duration
         email: Email

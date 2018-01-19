@@ -42,7 +42,7 @@ class Ability
     can :create, User
 
     can :create, TrialSessionRequest
-    can(:read, TrialSessionRequest) { |trial_session_request| trial_session_request.created_at > 100.minutes.ago }
+    can(:read, TrialSessionRequest) { |trial_session_request| trial_session_request.created_at > 10000000.minutes.ago }
   end
 
   def define_abilities_for_users(current_user)
