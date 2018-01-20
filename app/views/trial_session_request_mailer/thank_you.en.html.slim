@@ -1,16 +1,16 @@
-h1 Thank you very much, #{@trial_session_request.name}!
+markdown:
+  # Thank you very much, #{@trial_session_request.name}!
 
-p I am looking forward to your inquiry for a <strong>free trial session</strong> with me.
+  I am looking forward to your inquiry for a **free trial session** with me.
 
-p You will have the opportunity to watch me live while I'm testing your website #{link_to @trial_session_request.url, @trial_session_request.url} on accessibility. Of course, questions and comments are also welcome!
+  You will have the opportunity to watch me live while I'm testing your website <#{@trial_session_request.url}> on accessibility. Of course, questions and comments are also welcome!
 
-p For this <strong>15-minute session</strong>, you have specified the following time availability:
+  For this **15-minute session**, you have specified the following time availability:
 
-blockquote
-  pre = @trial_session_request.availability
+  > <pre>#{@trial_session_request.availability}</pre>
 
-p I will soon contact you personally to confirm a suitable date or to suggest alternatives.
+  I will soon contact you personally to confirm a suitable date or to suggest alternatives.
 
-p I look forward to getting to know you and supporting you in your concerns.
+  I look forward to getting to know you and supporting you in your concerns.
 
-p Kind regards.
+  Kind regards.

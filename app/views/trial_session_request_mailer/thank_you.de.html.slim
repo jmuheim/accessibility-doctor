@@ -1,16 +1,16 @@
-h1 Herzlichen Dank, #{@trial_session_request.name}!
+markdown:
+  # Herzlichen Dank, #{@trial_session_request.name}!
 
-p Ich freue mich sehr über Ihre Anfrage für eine <strong>kostenlose Probe-Session</strong> mit mir.
+  Ich freue mich sehr über Ihre Anfrage für eine **kostenlose Probe-Session** mit mir.
 
-p Sie werden dabei die Möglichkeit haben, mir live zuzuschauen beim Testen Ihrer Website #{link_to @trial_session_request.url, @trial_session_request.url} auf Accessibility (Barrierefreiheit). Auch Fragen und Kommentare sind dabei natürlich jederzeit willkommen!
+  Sie werden dabei die Möglichkeit haben, mir live zuzuschauen beim Testen Ihrer Website <#{@trial_session_request.url> auf Accessibility (Barrierefreiheit). Auch Fragen und Kommentare sind dabei natürlich jederzeit willkommen!
 
-p Für diese <strong>15 minütige Session</strong> haben Sie folgende zeitliche Verfügbarkeit angegeben:
+  Für diese **15 minütige Session** haben Sie folgende zeitliche Verfügbarkeit angegeben:
 
-blockquote
-  pre = @trial_session_request.availability
+  > <pre>#{@trial_session_request.availability}</pre>
 
-p Ich werde Sie bald persönlich kontaktieren, um einen passenden Termin zu bestätigen, oder um Ihnen Alternativen vorschlagen.
+  Ich werde Sie bald persönlich kontaktieren, um einen passenden Termin zu bestätigen, oder um Ihnen Alternativen vorschlagen.
 
-p Ich freue mich, Sie kennenzulernen und Sie bei Ihren Anliegen zu unterstützen.
+  Ich freue mich, Sie kennenzulernen und Sie bei Ihren Anliegen zu unterstützen.
 
-p Herzliche Grüsse.
+  Herzliche Grüsse.
