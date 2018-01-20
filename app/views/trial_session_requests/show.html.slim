@@ -41,7 +41,12 @@
         .additional_information
           h2 = t 'shared.show.additional_information'
 
-          == render 'details', trial_session_request: @trial_session_request
+          dl.dl-horizontal
+            dt.created_at = TrialSessionRequest.human_attribute_name :created_at
+            dd.created_at = l @trial_session_request.created_at
+
+            dt.updated_at = TrialSessionRequest.human_attribute_name :updated_at
+            dd.updated_at = l @trial_session_request.updated_at
 
     == render 'shared/show/versions', versions: @trial_session_request.versions if can?(:read, PaperTrail::Version) && @trial_session_request.versions.any?
     == render 'shared/show/actions', resource: @trial_session_request

@@ -1,8 +1,3 @@
-h1 Editing trial_session_request
+= headline_with_flash t('actions.edit_resource', resource: @trial_session_request.id)
 
-== render 'form'
-
-=> link_to 'Show', @trial_session_request
-'|
-=< link_to 'Back', trial_session_requests_path
-
+== render 'form', trial_session_request: @trial_session_request

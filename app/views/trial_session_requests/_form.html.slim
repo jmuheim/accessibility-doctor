@@ -38,17 +38,7 @@
       = panel.body do
         = f.input :agree_to_terms_and_conditions, default: false, required: false
 
-    = panel do |panel|
-      = panel.heading do
-        = t '.captcha'
-
-      = panel.body do
-        = f.input :humanizer_answer, label: @trial_session_request.humanizer_question
-
-        - if Rails.env.test?
-          = f.hidden_field :humanizer_question_id, value: 16
-        - else
-          = f.hidden_field :humanizer_question_id
+  == render 'shared/form/captcha', f: f
 
   .row
     .col-md-12
