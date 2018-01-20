@@ -45,8 +45,6 @@ en:
         value_before: Value before
         value_difference: Value difference
     form:
-      captcha:
-        captcha: Sicherheitsabfrage (CAPTCHA)
       details: Details
       stale_info:
         instructions: At the time being, the form only contains your changes ("Value after"). Please merge the interim changes ("Value before") by the other user manually. Only save, when you are sure, that no changes are abandoned by error!
@@ -61,27 +59,15 @@ en:
         update: Update
       versions:
         no_changes: No changes in this version
-  trial_session:
-    form:
-      additional_details: Weitere Details
-      captcha: Sicherheitsabfrage (CAPTCHA)
-      personal_details: Ihre Personalien
-      session_details: Details zur gewünschten Session
-      terms_and_conditions: Allgemeine Geschäftsbedingungen
-    show:
-      title: Herzlichen Dank!
   trial_session_request_mailer:
     thank_you:
       subject: Thank you for your request for a demo session with Accessibility-Doctor.com
   trial_session_requests:
     form:
       additional_details: Additional details
-      captcha: Security question (CAPTCHA)
       personal_details: Personal details
       session_details: Details about the desired session
       terms_and_conditions: Terms and conditions
-    show:
-      title: Thank you very much!
   'true': 'Yes'
   users:
     detail_inputs:

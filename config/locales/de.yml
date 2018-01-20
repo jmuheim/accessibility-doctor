@@ -61,27 +61,15 @@ de:
         update: Aktualisieren
       versions:
         no_changes: Keine Änderungen in dieser Version
-  trial_session:
-    form:
-      additional_details: Weitere Details
-      captcha: Sicherheitsabfrage (CAPTCHA)
-      personal_details: Ihre Personalien
-      session_details: Details zur gewünschten Session
-      terms_and_conditions: Allgemeine Geschäftsbedingungen
-    show:
-      title: Herzlichen Dank!
   trial_session_request_mailer:
     thank_you:
       subject: Ihre Anfrage bezüglich einer Probe-Session mit Accessibility Doctor
   trial_session_requests:
     form:
       additional_details: Additional details
-      captcha: Security question (CAPTCHA)
       personal_details: Personal details
       session_details: Details about the desired session
       terms_and_conditions: Terms and conditions
-    show:
-      title: Thank you very much!
   'true': Ja
   users:
     detail_inputs:
