@@ -3,35 +3,13 @@
 .row
   .col-md-4.col-md-push-8
     .alert.alert-success
-      h2
-        => icon 'smile-o', type: :fa
-        | Ich freue mich, Sie kennen zu lernen!
-
-      p Schön, dass Sie mit mir in Kontakt treten möchten. Bitte füllen Sie hierzu das Formular aus.
-
-      p Während einer 15 minütigen Demo-Session werden Sie Gelegenheit haben, sich live von meinen Qualifikationen zu überzeugen. Zudem werden wir merken, ob die Chemie zwischen uns stimmt.
-
-      p Diese Demo-Session ist 100% kostenlos und führt zu keinerlei Verpflichtung. Sie können danach in Ruhe entscheiden, ob Sie meine Dienstleistungen in Anspruch nehmen wollen.
-
-      p Herzlich, Ihr Joshua Muheim
+      == render 'new_happy_to_get_to_know_you'
 
     .alert.alert-info
-      h2
-        => icon 'map-o', type: :fa
-        | Wie sieht eine Demo-Session aus?
-
-      p Ich lade Sie zu einer Video-Konferenz ein. Ich verwende hierzu die Software #{link_to 'Zoom.us', 'https://zoom.us/'} (kostenlos, keinerlei Installation notwendig).
-
-      p Im Zentrum der Session steht die Überprüfung Ihrer Website: hierfür teile ich meinen Desktop mit Ihnen, so dass Sie live erleben können, wie sich Ihre Website bei den unterschiedlichen Tests bewährt. Zudem sehen Sie, welche Tools ich dafür nutze (z.B. Screenreader, Kontrast-Checker, etc.).
-
-      p Sie können natürlich jederzeit Fragen stellen und Kommentare anbringen. Und zum Schluss besprechen wir, wie eine weitere Zusammenarbeit aussehen könnte.
+      == render 'new_how_looks_a_trial_session'
 
     .alert.alert-warning
-      h2
-        => icon 'youtube-play', type: :fa
-        | Inklusive Video-Mitschnitt der Session!
-
-      p Nach der Session schicke ich Ihnen den Video-Mitschnitt derselben. So können Sie in Ruhe nochmal alles durchgehen und mit Ihrem Team oder Vorgesetzten besprechen.
+      == render 'including_recording'
 
   .col-md-8.col-md-pull-4
     == render 'form', trial_session_request: @trial_session_request
