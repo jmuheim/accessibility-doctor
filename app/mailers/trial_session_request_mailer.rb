@@ -9,6 +9,6 @@ class TrialSessionRequestMailer < ApplicationMailer
 
   def new_request(trial_session_request)
     @trial_session_request = trial_session_request
-    mail(to: Rails.application.secrets.mailer_from, subject: 'New request for a trial session')
+    mail(to: email_with_name(Rails.application.secrets.mailer_from), subject: "New request for a trial session by #{@trial_session_request.name} (#{@trial_session_request.company})")
   end
 end

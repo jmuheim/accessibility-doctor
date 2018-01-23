@@ -24,9 +24,9 @@ describe 'Creating page' do
 
     visit new_page_path
 
-    expect(page).to have_title 'Create Page - Base'
+    expect(page).to have_title 'Create Page - A11y-Doc'
     expect(page).to have_active_navigation_items 'Pages', 'Create Page'
-    expect(page).to have_breadcrumbs 'Base', 'Pages', 'Create'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Pages', 'Create'
     expect(page).to have_headline 'Create Page'
 
     expect(page).to have_css 'h2', text: 'Information about organising pages as tree hierarchy'

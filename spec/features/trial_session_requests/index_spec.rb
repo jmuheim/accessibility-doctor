@@ -11,9 +11,9 @@ describe 'Listing pages' do
     @page = create :page, creator: @user, images: [create(:image, creator: @user)], codes: [create(:code, creator: @user)], navigation_title: 'Page test navigation title', parent: parent_page
     visit pages_path
 
-    expect(page).to have_title 'Pages - Base'
+    expect(page).to have_title 'Pages - A11y-Doc'
     expect(page).to have_active_navigation_items 'Pages', 'List of Pages'
-    expect(page).to have_breadcrumbs 'Base', 'Pages'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Pages'
     expect(page).to have_headline 'Pages'
 
     within dom_id_selector(@page) do
@@ -39,7 +39,7 @@ describe 'Listing pages' do
     @page = create :page, creator: @user, navigation_title: 'Page test navigation title', parent: parent_page
     visit pages_path format: :atom
 
-    expect(page).to have_title 'Pages - Base Project'
+    expect(page).to have_title 'Pages - A11y-Doc Project'
 
     within 'entry:nth-of-type(1)' do
       expect(page).to have_css 'title', text: 'Parent page'

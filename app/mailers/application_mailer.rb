@@ -1,5 +1,11 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: Rails.application.secrets.mailer_from
+  default from: -> { email_with_name Rails.application.secrets.mailer_from }
   layout 'mailer'
+
+  private
+
+  def email_with_name(email)
+    "Accessibility-Doctor.com <#{email}>"
+  end
 end
 

@@ -10,9 +10,9 @@ describe 'Showing trial session request' do
     @trial_session_request = create :trial_session_request
     visit trial_session_request_path(@trial_session_request)
 
-    expect(trial_session_request).to have_title '1 - Base'
+    expect(trial_session_request).to have_title '1 - A11y-Doc'
     # expect(trial_session_request).to have_active_navigation_items 'Page test navigation title'
-    expect(trial_session_request).to have_breadcrumbs 'Base', 'Trial Session Requests', '1'
+    expect(trial_session_request).to have_breadcrumbs 'A11y-Doc', 'Trial Session Requests', '1'
     expect(trial_session_request).to have_headline '1'
 
     within dom_id_selector(@trial_session_request) do

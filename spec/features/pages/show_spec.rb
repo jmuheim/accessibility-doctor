@@ -22,9 +22,9 @@ describe 'Showing page' do
 
     visit page_path(@page)
 
-    expect(page).to have_title 'Page test title - Base'
+    expect(page).to have_title 'Page test title - A11y-Doc'
     expect(page).to have_active_navigation_items 'Page test navigation title'
-    expect(page).to have_breadcrumbs 'Base', 'Cool parent page', 'Page test navigation title'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Cool parent page', 'Page test navigation title'
     expect(page).to have_headline 'Page test title'
 
     within dom_id_selector(@page) do
