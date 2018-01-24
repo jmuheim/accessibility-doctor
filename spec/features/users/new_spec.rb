@@ -6,9 +6,9 @@ describe 'Creating user' do
   it 'creates a user' do
     visit new_user_path
 
-    expect(page).to have_title 'Create User - Base'
+    expect(page).to have_title 'Create User - A11y-Doc'
     expect(page).to have_active_navigation_items 'Users', 'Create User'
-    expect(page).to have_breadcrumbs 'Base', 'Users', 'Create'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Users', 'Create'
     expect(page).to have_headline 'Create User'
 
     expect(page).to have_css 'h2', text: 'Account information'

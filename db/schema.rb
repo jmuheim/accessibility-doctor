@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171213153814) do
+ActiveRecord::Schema.define(version: 20180109125940) do
 
   create_table "codes", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title", null: false
@@ -61,6 +61,24 @@ ActiveRecord::Schema.define(version: 20171213153814) do
     t.text "lead_de"
     t.text "content_de"
     t.index ["creator_id"], name: "index_pages_on_creator_id"
+  end
+
+  create_table "trial_session_requests", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "starts_at"
+    t.text "availability"
+    t.string "time_zone"
+    t.string "language"
+    t.string "name"
+    t.string "company"
+    t.string "email"
+    t.string "url"
+    t.text "message"
+    t.string "how_found_us"
+    t.text "notes"
+    t.boolean "agree_to_terms_and_conditions", default: false
+    t.integer "lock_version"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

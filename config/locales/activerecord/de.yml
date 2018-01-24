@@ -30,6 +30,19 @@ de:
       paper_trail/version:
         created_at: Erstellt am
         whodunnit: Verantwortlicher
+      trial_session_request:
+        agree_to_terms_and_conditions: Ja, ich akzeptiere die Allgemeinen Geschäftsbedingungen!
+        availability: Verfügbarkeit
+        company: Firma
+        description: Beschreibung
+        duration: Dauer
+        email: Email
+        how_found_us: Wie haben Sie mich gefunden?
+        language: Sprache
+        message: Persönliche Nachricht
+        name: Name
+        time_zone: Zeitzone
+        url: Website
       user:
         about: Über
         avatar: Profilbild
@@ -64,6 +77,9 @@ de:
       paper_trail/version:
         one: Version
         other: Versionen
+      trial_session_request:
+        one: Antrag für Probe-Session
+        other: Anträge für Probe-Sessions
       user:
         one: Benutzer
         other: Benutzer

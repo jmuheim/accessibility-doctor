@@ -13,14 +13,27 @@ en:
         navigation_title: Appears in the menu and breadcrumbs. Leave empty to use title.
         notes: Only for internal usage (not publicly viewable).
         title: Appears as main heading when displaying the page.
+      trial_session_request:
+        agree_to_terms_and_conditions: 'Please read carefully: <a href="/de/pages/1">General Terms and Conditions</a>'
+        availability: Please give me one or more time frames, which would suit you for the 15 minute session. With a little luck I will be able to confirm one of them when I contact you; otherwise I will suggest alternatives.
+        description: Further details and comments, such as information about the website to be tested, as well as questions about accessibility or suggestions for potential future collaboration.
+        duration: The first session always lasts 15 minutes and is 100% free.
+        email: Will only be used for contacting you and will never be passed on to third parties.
+        how_found_us: You are welcome to describe this in more detail in the following field.
+        humanizer_answer: 'By answering this question you make yourself identifiable as a human being; this is a protection from automated computer queries (spam). More information here: <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
+        language: In which language would you like to communicate? My mother tongue is Swiss German, but I also speak fluent English.
+        message: I am looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
+        time_zone: Please name your time zone so that I can take into account potential time differences between you and me (Switzerland, GMT+1).
+        url: Specifying the website to be tested allows me to plan the session optimally, but we can also select a website ad hoc.
       user:
         about: Write something about you (biography, interests, hobbies...). You can use Pandoc Markdown to add basic formatting.
+        humanizer_answer: 'By answering this question you make yourself identifiable as a human being; this is a protection from automated computer queries (spam). More information here: <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
         password_confirmation: Retype your password to avoid typing errors.
     inputs:
       autocomplete:
         help: Suggests options (enter filter text, or use up/down arrow keys)
-        number_filtered: '[number] of [total] options for [filter]'
-        number_in_total: '[number] options in total'
+        number_filtered: "[number] of [total] options for [filter]"
+        number_in_total: "[number] options in total"
         options_for: Suggestions for %{attribute}
       better_text:
         allows_pasting_of_resources: Allows pasting of images and CodePen links as resources
@@ -41,6 +54,9 @@ en:
         remove_file: Remove existing %{attribute} file
         reset_selection: Reset %{attribute} file selection
     'no': 'No'
+    placeholders:
+      trial_session_request:
+        url: http://www.example.com
     required:
       mark: "*"
       text: required

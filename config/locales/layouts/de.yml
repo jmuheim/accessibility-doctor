@@ -7,6 +7,8 @@ de:
     jump_links:
       content: Zum Inhalt springen
       home_page: Zur Startseite springen
+    mailer:
+      profession: Accessibility Consultant & Senior Fullstack Web Developer
     navigation:
       admin: Admin
       choose_locale: Sprache wählen
@@ -19,6 +21,7 @@ de:
       log_out: Abmelden
       meta_navigation: Metanavigation
       navigation: Navigation
+      new_trial_session_request: Kostenlose Probe-Beratung anfordern!
       overview: Übersicht
       show_account: Konto anzeigen
       sign_in: Anmelden

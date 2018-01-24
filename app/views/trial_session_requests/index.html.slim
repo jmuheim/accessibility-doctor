@@ -1,0 +1,7 @@
+= headline_with_flash TrialSessionRequest.model_name.human count: :other
+
+/ Would be nice to do something like `= render @trial_session_requests, wrapper: true`, see http://stackoverflow.com/questions/22120292
+== render 'trial_session_requests', trial_session_requests: @trial_session_requests, q: @q
+
+h2.sr-only = t 'actions.actions'
+== render 'shared/index/create_resource', resource: TrialSessionRequest

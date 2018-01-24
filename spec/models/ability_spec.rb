@@ -27,6 +27,19 @@ describe Ability do
       it { should_not be_able_to(:destroy, Page.new) }
     end
 
+    describe 'managing trial session requests' do
+      it { should_not be_able_to(:index, TrialSessionRequest) }
+
+      it { should     be_able_to(:create, TrialSessionRequest) }
+
+      it { should     be_able_to(:read, TrialSessionRequest.new(created_at: Time.now)) }
+      it { should_not be_able_to(:read, TrialSessionRequest.new(created_at: Time.now - 60.seconds)) }
+
+      it { should_not be_able_to(:update, TrialSessionRequest.new) }
+
+      it { should_not be_able_to(:destroy, TrialSessionRequest.new) }
+    end
+
     describe 'managing users' do
       it { should_not be_able_to(:index, User) }
 
@@ -69,6 +82,18 @@ describe Ability do
       it { should_not be_able_to(:update, Page.new) }
 
       it { should_not be_able_to(:destroy, Page.new) }
+    end
+
+    describe 'managing trial session requests' do
+      it { should_not be_able_to(:index, TrialSessionRequest) }
+
+      it { should_not be_able_to(:create, TrialSessionRequest) }
+
+      it { should_not be_able_to(:read, TrialSessionRequest.new) }
+
+      it { should_not be_able_to(:update, TrialSessionRequest.new) }
+
+      it { should_not be_able_to(:destroy, TrialSessionRequest.new) }
     end
 
     describe 'managing users' do
@@ -114,6 +139,18 @@ describe Ability do
       it { should be_able_to(:update, Page.new) }
 
       it { should be_able_to(:destroy, Page.new) }
+    end
+
+    describe 'managing trial session requests' do
+      it { should_not be_able_to(:index, TrialSessionRequest) }
+
+      it { should_not be_able_to(:create, TrialSessionRequest) }
+
+      it { should_not be_able_to(:read, TrialSessionRequest.new) }
+
+      it { should_not be_able_to(:update, TrialSessionRequest.new) }
+
+      it { should_not be_able_to(:destroy, TrialSessionRequest.new) }
     end
 
     describe 'managing users' do
@@ -162,6 +199,18 @@ describe Ability do
       it { should be_able_to(:update, Page.new) }
 
       it { should be_able_to(:destroy, Page.new) }
+    end
+
+    describe 'managing trial session requests' do
+      it { should be_able_to(:index, TrialSessionRequest) }
+
+      it { should be_able_to(:create, TrialSessionRequest) }
+
+      it { should be_able_to(:read, TrialSessionRequest.new) }
+
+      it { should be_able_to(:update, TrialSessionRequest.new) }
+
+      it { should be_able_to(:destroy, TrialSessionRequest.new) }
     end
 
     describe 'managing users' do
