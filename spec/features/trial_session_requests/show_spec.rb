@@ -1,27 +1,25 @@
 require 'rails_helper'
 
 describe 'Showing trial session request' do
-  context 'as a guest' do
-    before { @trial_session_request = create :trial_session_request }
+  before { @trial_session_request = create :trial_session_request }
 
+  context 'as a guest' do
     it 'displays a "thank you" message' do
       visit trial_session_request_path(@trial_session_request)
 
-      expect(page).to have_title 'Trial Session Request test name - A11y-Doc'
-      expect(page).to have_active_navigation_items 'Trial Session Requests'
+      expect(page).to have_title 'Thank you very much! - A11y-Doc'
+      # expect(page).to have_active_navigation_items 'Request a free trial consultation!'
       expect(page).to have_breadcrumbs 'A11y-Doc', 'Trial Session Requests', 'Trial Session Request test...'
-      expect(page).to have_headline 'Trial Session Request test name'
+      expect(page).to have_headline 'Thank you very much!'
 
-      expect(page).to have_test 'Your request has been received successfully and I will take care of its processing!'
+      expect(page).to have_text 'Your request has been received successfully and I will take care of its processing!'
     end
   end
 
-  context 'as an adming' do
+  context 'as an admin' do
     before do
       @user = create :user, :admin
       login_as(@user)
-
-      @trial_session_request = create :trial_session_request
     end
 
     it 'displays a trial session request' do
@@ -63,6 +61,15 @@ describe 'Showing trial session request' do
           expect(page).to have_link 'Create Trial Session Request'
           expect(page).to have_link 'List of Trial Session Requests'
         end
+      end
+    end
+
+    # The more thorough tests are implemented for pages#show. As we simply render the same partial here, we just make sure the container is there.
+    it 'displays versions', versioning: true do
+      visit trial_session_request_path(@trial_session_request)
+
+      within '.versions' do
+        expect(page).to have_css 'h2', text: 'Versions (1)'
       end
     end
   end

@@ -1,57 +1,45 @@
-.row
-  .col-md-4.col-md-push-8
-    .alert.alert-success
-      == render 'new_happy_to_get_to_know_you'
+= simple_form_for @trial_session_request, html:    {class: 'form-horizontal'},
+                                wrapper: :horizontal_form do |f|
+  == render 'shared/form/stale_info', f: f
 
-    .alert.alert-info
-      == render 'new_how_looks_a_trial_session'
+  = panel do |panel|
+    = panel.heading do
+      = t '.personal_details'
 
-    .alert.alert-warning
-      == render 'including_recording'
+    = panel.body do
+      = f.input :name
+      = f.input :company
+      = f.input :email
+      = f.input :language
 
-  .col-md-8.col-md-pull-4
-    = simple_form_for @trial_session_request, html:    {class: 'form-horizontal'},
-                                    wrapper: :horizontal_form do |f|
-      == render 'shared/form/stale_info', f: f
+  = panel do |panel|
+    = panel.heading do
+      = t '.session_details'
 
-      = panel do |panel|
-        = panel.heading do
-          = t '.personal_details'
+    = panel.body do
+      = f.input :url
+      = f.input :availability
+      = f.input :time_zone, as: :time_zone, collection: ActiveSupport::TimeZone.all, default: 'Zurich'
+      = f.input :duration, disabled: true, include_blank: false
 
-        = panel.body do
-          = f.input :name
-          = f.input :company
-          = f.input :email
-          = f.input :language
+  = panel do |panel|
+    = panel.heading do
+      = t '.additional_details'
 
-      = panel do |panel|
-        = panel.heading do
-          = t '.session_details'
+    = panel.body do
+      = f.input :how_found_us
+      = f.input :message
 
-        = panel.body do
-          = f.input :url
-          = f.input :availability
-          = f.input :time_zone, as: :time_zone, collection: ActiveSupport::TimeZone.all, default: 'Zurich'
-          = f.input :duration, disabled: true, include_blank: false
+  - if f.object.new_record?
+    = panel do |panel|
+      = panel.heading do
+        = t '.terms_and_conditions'
 
-      = panel do |panel|
-        = panel.heading do
-          = t '.additional_details'
+      = panel.body do
+        = f.input :agree_to_terms_and_conditions, required: false
 
-        = panel.body do
-          = f.input :how_found_us
-          = f.input :message
+  == render 'shared/form/captcha', f: f
 
-      - if f.object.new_record?
-        = panel do |panel|
-          = panel.heading do
-            = t '.terms_and_conditions'
-
-          = panel.body do
-            = f.input :agree_to_terms_and_conditions, required: false
-
-      == render 'shared/form/captcha', f: f
-
-      .row
-        .col-md-12
-          == render 'shared/form/actions', form: f, resource: @trial_session_request
+  .row
+    .col-md-12
+      == render 'shared/form/actions', form: f, resource: @trial_session_request
