@@ -55,4 +55,27 @@ describe 'Editing trial session request' do
       .and change { @trial_session_request.how_found_us }.to('recommendation')
       .and change { @trial_session_request.message }.to('Neue Nachricht')
   end
+
+  it "prevents from overwriting other users' changes accidently (caused by race conditions)" do
+    visit edit_trial_session_request_path(@trial_session_request)
+
+    # Change something in the database...
+    expect {
+      @trial_session_request.update_attributes message: 'This is the old message'
+    }.to change { @trial_session_request.lock_version }.by 1
+
+    fill_in 'trial_session_request_message', with: 'This is the new message, yeah!'
+
+    expect {
+      click_button 'Update Trial Session Request'
+      @trial_session_request.reload
+    }.not_to change { @trial_session_request }
+
+    expect(page).to have_flash('Alert: Trial Session Request meanwhile has been changed. The conflicting field is: Personal message.').of_type :alert
+
+    expect {
+      click_button 'Update Trial Session Request'
+      @trial_session_request.reload
+    } .to change { @trial_session_request.message }.to('This is the new message, yeah!')
+  end
 end

@@ -1,15 +1,3 @@
 = headline_with_flash t('actions.new_resource', resource: TrialSessionRequest.model_name.human)
 
-.row
-  .col-md-4.col-md-push-8
-    .alert.alert-success
-      == render 'new_happy_to_get_to_know_you'
-
-    .alert.alert-info
-      == render 'new_how_looks_a_trial_session'
-
-    .alert.alert-warning
-      == render 'including_recording'
-
-  .col-md-8.col-md-pull-4
-    == render 'form', trial_session_request: @trial_session_request
+== render 'form', trial_session_request: @trial_session_request

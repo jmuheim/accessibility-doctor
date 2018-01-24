@@ -9,6 +9,18 @@ RSpec.describe TrialSessionRequest do
   it { should validate_presence_of :how_found_us }
   it { should validate_presence_of :agree_to_terms_and_conditions }
 
+  describe 'email validation' do
+    it 'accepts a valid email' do
+      trial_session_request = build :trial_session_request, email: 'test@example.com'
+      expect(trial_session_request).to be_valid
+    end
+
+    it "doesn't accept an invalid email" do
+      trial_session_request = build :trial_session_request, email: 'wrong email'
+      expect(trial_session_request.errors_on(:email)).to include 'does not appear to be a valid e-mail address'
+    end
+  end
+
   describe 'url validation' do
     it 'accepts an empty url' do
       trial_session_request = build :trial_session_request, url: nil

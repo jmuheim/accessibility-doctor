@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :trial_session_request do
     starts_at                     "2018-01-09 13:59:40"
     availability                  'Trial Session Request test availability'
-    time_zone                     'Trial Session Request test time_zone'
+    time_zone                     'Riga'
     language                      'en'
     name                          'Trial Session Request test name'
     company                       'Trial Session Request test company'

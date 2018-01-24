@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20180109125940) do
     t.text "message"
     t.string "how_found_us"
     t.text "notes"
-    t.boolean "agree_to_terms_and_conditions"
+    t.boolean "agree_to_terms_and_conditions", default: false
     t.integer "lock_version"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

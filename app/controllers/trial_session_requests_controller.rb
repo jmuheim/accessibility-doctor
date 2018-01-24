@@ -1,5 +1,6 @@
 class TrialSessionRequestsController < ApplicationController
   load_and_authorize_resource
+  provide_optimistic_locking
   before_action :add_breadcrumbs
   respond_to :html
 

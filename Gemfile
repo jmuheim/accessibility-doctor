@@ -27,6 +27,8 @@ gem 'font-awesome-rails' # The iconic font and CSS toolkit
 
 gem 'validate_url' # URL Validation for Rails
 
+gem 'validates_email_format_of' # Validate e-mail addreses against RFC 2822 and RFC 3696
+
 gem 'humanizer' # Very simple captcha
 
 gem 'acts_as_tree' # Extends ActiveRecord to add simple support for organizing items into parent–children relationships

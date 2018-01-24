@@ -70,6 +70,8 @@ de:
       personal_details: Personal details
       session_details: Details about the desired session
       terms_and_conditions: Terms and conditions
+    show:
+      title: Herzlichen Dank!
   'true': Ja
   users:
     detail_inputs:
