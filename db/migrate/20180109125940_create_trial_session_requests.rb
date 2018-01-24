@@ -11,7 +11,6 @@ class CreateTrialSessionRequests < ActiveRecord::Migration[5.1]
       t.string :url
       t.text :message
       t.string :how_found_us
-      t.text :notes
       t.boolean :agree_to_terms_and_conditions, default: false
       t.integer :lock_version
 

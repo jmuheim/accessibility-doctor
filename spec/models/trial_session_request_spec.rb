@@ -141,12 +141,6 @@ RSpec.describe TrialSessionRequest do
           @trial_session_request.update_attributes! how_found_us: 'recommendation'
         }.to change { @trial_session_request.versions.count }.by 1
       end
-
-      it 'versions notes' do
-        expect {
-          @trial_session_request.update_attributes! notes: 'Some secret notes'
-        }.to change { @trial_session_request.versions.count }.by 1
-      end
     end
   end
 end

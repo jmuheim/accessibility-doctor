@@ -10,7 +10,6 @@ FactoryBot.define do
     url                           'http://www.example.com'
     message                       'Trial Session Request test message'
     how_found_us                  'other'
-    notes                         'Trial Session Request test notes'
     agree_to_terms_and_conditions true
     humanizer_question_id         '16'
     humanizer_answer              '5'
