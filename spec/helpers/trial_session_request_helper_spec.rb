@@ -7,7 +7,7 @@ describe TrialSessionRequestHelper do
     end
 
     it 'raises an exception if no valid time zone given' do
-      expect(offset_for_time_zone('Entenhausen')).to raise_error
+      expect { offset_for_time_zone('Entenhausen') }.to raise_error 'Entenhausen is no valid time zone!'
     end
   end
 end

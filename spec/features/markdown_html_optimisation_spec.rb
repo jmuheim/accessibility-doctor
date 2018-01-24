@@ -2,10 +2,11 @@ require 'rails_helper'
 
 describe 'Markdown HTML optimisation' do
   it 'optimises the HTML', js: true do
-    @page = create :page, creator: create(:user), content: "![](decorative-image)\n\n![Some alt text](informative-image)"
+    @page = create :page, creator: create(:user), content: "Test\n\n![](decorative-image)\n\n![Some alt text](informative-image)"
     visit page_path @page
 
     # The caption of an image is hidden to screen readers (as it is redundant to its alt-attribute)
+    save_and_open_page
     expect(page).to have_css '.figure .caption[aria-hidden="true"]', text: 'Some alt text'
 
     # Adds an empty alt attribute to an image if there's no alt attribute

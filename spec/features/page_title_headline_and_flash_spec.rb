@@ -4,8 +4,8 @@ describe 'Page title, headline and flash' do
   it 'displays the page title and the headline on the home page' do
     visit root_path
 
-    expect(page).to have_title 'Welcome to Base!'
-    expect(page).to have_css 'main h1', text: 'Welcome to Base!'
+    expect(page).to have_title 'Welcome to Accessibility Doctor!'
+    expect(page).to have_css 'main h1', text: 'Welcome to Accessibility Doctor!'
   end
 
   it 'displays the page title and the headline on other pages' do
