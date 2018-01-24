@@ -5,7 +5,7 @@ class ApplicationMailer < ActionMailer::Base
   private
 
   def email_with_name(email)
-    "#{I18n.t 'app.acronym'} <#{email}>"
+    "#{I18n.t 'app.name'} (#{I18n.t 'app.acronym'}) <#{email}>"
   end
 end
 

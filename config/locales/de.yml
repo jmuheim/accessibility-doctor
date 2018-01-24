@@ -46,7 +46,7 @@ de:
         value_difference: Wert Unterschied
     form:
       captcha:
-        heading: Security question (CAPTCHA)
+        heading: Sicherheits-Abfrage (CAPTCHA)
       details: Details
       stale_info:
         instructions: Das Formular beinhaltet momentan nur deine Änderungen ("Wert vorher"). Bitte führe die zwischenzeitlich von einem anderen Benutzer getätigten Änderungen ("Wert nachher") manuell zu den deinen hinzu. Speichere erst, wenn du sicher bist, dass dadurch keine Änderungen ungewollt verloren gehen!
@@ -66,10 +66,10 @@ de:
       subject: Ihre Anfrage bezüglich einer Probe-Session mit Accessibility Doctor
   trial_session_requests:
     form:
-      additional_details: Additional details
-      personal_details: Personal details
-      session_details: Details about the desired session
-      terms_and_conditions: Terms and conditions
+      additional_details: Weitere Informationen
+      personal_details: Persönliche Angaben
+      session_details: Details zu der gewünschten Session
+      terms_and_conditions: Allgemeine Geschäftsbedingungen
     show:
       title: Herzlichen Dank!
   'true': Ja
