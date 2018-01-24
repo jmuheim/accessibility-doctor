@@ -27,6 +27,7 @@ de:
         url: Die Angabe der zu testenden Website erlaubt mir, die Session optimal zu planen. Wir können aber auch adhoc eine Website wählen.
       user:
         about: Schreib etwas über dich (Biographie, Interessen, Hobbies...). Du kannst Pandoc Markdown verwenden zum Formatieren.
+        humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies ist ein Schutz vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
         password_confirmation: Gib dein Passwort nochmal ein, um Tippfehler zu vermeiden.
     inputs:
       autocomplete:

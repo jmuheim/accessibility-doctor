@@ -8,4 +8,3 @@ class ApplicationMailer < ActionMailer::Base
     "#{I18n.t 'app.name'} (#{I18n.t 'app.acronym'}) <#{email}>"
   end
 end
-
