@@ -1,35 +1,17 @@
 require 'rails_helper'
 
-describe 'Editing page' do
+describe 'Editing trial session request' do
   before do
-    @user = create :user, :editor
+    @user = create :user, :admin
     login_as @user
+
+    @trial_session_request = create :trial_session_request
   end
 
-  it 'grants permission to edit a page and removes abandoned images', js: true do
-    # Admitted, this looks very ugly...
-    [:existing, :abandoned, :new].each do |code|
-      allow_any_instance_of(PagesController).to receive(:open).with("https://codepen.io/api/oembed?url=https://codepen.io/#{code}/pen/code&format=json").and_return '{"title": "A great pen!", "thumbnail_url": "http://example.com/thumbnail.png"}'
-      html = double('html null object')
-      allow(html).to receive(:read).and_return('Some HTML')
-      allow_any_instance_of(PagesController).to receive(:open).with("https://codepen.io/#{code}/pen/code.html").and_return html
-      css = double('css null object')
-      allow(css).to receive(:read).and_return('Some CSS')
-      allow_any_instance_of(PagesController).to receive(:open).with("https://codepen.io/#{code}/pen/code.css").and_return css
-      js = double('js null object')
-      allow(js).to receive(:read).and_return('Some JavaScript')
-      allow_any_instance_of(PagesController).to receive(:open).with("https://codepen.io/#{code}/pen/code.js").and_return js
-    end
+  it 'edits a trial session request' do
+    visit edit_trial_session_request_path(@trial_session_request)
 
-    old_page_parent = create :page, creator: @user, title: 'Cool parent page', navigation_title: nil
-    new_parent_page = create :page, creator: @user, title: 'Cooler parent page'
-    child_of_new_parent_page = create :page, creator: @user, parent: new_parent_page
-
-    @page = create :page, creator: @user, images: [create(:image, creator: @user)], codes: [create(:code, creator: @user)], parent: old_page_parent, navigation_title: 'Cool navigation title'
-
-    visit edit_page_path(@page)
-
-    expect(page).to have_title 'Edit Page test title - A11y-Doc'
+    expect(page).to have_title 'Edit 1 - A11y-Doc'
     expect(page).to have_active_navigation_items 'Cool parent page', 'Cool navigation title'
     expect(page).to have_breadcrumbs 'A11y-Doc', 'Cool parent page', 'Cool navigation title', 'Edit'
     expect(page).to have_headline 'Edit Page test title'
@@ -135,141 +117,5 @@ describe 'Editing page' do
     # Only the referenced code is kept
     expect(Code.count).to eq 2
     expect(Code.last.identifier).to eq 'new-code'
-  end
-
-  it "provides the correct parent and position collections" do
-    parent_page = create :page, creator: @user, title: 'Parent page'
-    @page = create :page, creator: @user, parent: parent_page, title: 'Page'
-    page_child = create :page, creator: @user, parent: @page, title: 'Page child'
-    page_sibling = create :page, creator: @user, parent: parent_page, title: 'Page sibling'
-    parent_page_sibling = create :page, creator: @user, title: 'Parent page sibling'
-    parent_page_sibling_child = create :page, creator: @user, title: 'Parent page sibling child'
-
-    visit edit_page_path(@page)
-    expect(all('input[type="radio"][name="page[parent_id]"]', visible: false).map { |input| input[:id] }).to eq [
-        # TODO: Empty option!
-        "page_parent_id_#{parent_page.id}",
-        "page_parent_id_#{page_sibling.id}",
-        "page_parent_id_#{parent_page_sibling.id}",
-        "page_parent_id_#{parent_page_sibling_child.id}"
-      ]
-
-    expect(all("select#page_position option").map(&:text)).to eq [ "Page (##{@page.id})",
-                                                                   "Page sibling (##{page_sibling.id})"
-                                                                 ]
-  end
-
-  it "prevents from overwriting other users' changes accidently (caused by race conditions)" do
-    @page = create :page, creator: @user
-    visit edit_page_path(@page)
-
-    # Change something in the database...
-    expect {
-      @page.update_attributes content: 'This is the old content'
-    }.to change { @page.lock_version }.by 1
-
-    fill_in 'page_content', with: 'This is the new content, yeah!'
-
-    expect {
-      click_button 'Update Page'
-      @page.reload
-    }.not_to change { @page }
-
-    expect(page).to have_flash('Alert: Page meanwhile has been changed. The conflicting field is: Content.').of_type :alert
-
-    expect {
-      click_button 'Update Page'
-      @page.reload
-    } .to change { @page.content }.to('This is the new content, yeah!')
-  end
-
-  # Don't copy&paste this spec to another translated model (as everything runs under the covers)! Only do model specs for other translated models!
-  it 'translates a page' do
-    @page = create :page, title:            'English title',
-                          navigation_title: 'English navigation title',
-                          lead:             'English lead',
-                          content:          'English content',
-                          notes:            'Notes are not translated!',
-                          creator:          @user
-
-    # English page in English... as always.
-    visit page_path(@page)
-
-    expect(page).to have_active_navigation_items 'English navigation title'
-    expect(page).to have_headline 'English title'
-
-    within dom_id_selector(@page) do
-      expect(page).to have_css '.lead',    text: 'English lead'
-      expect(page).to have_css '.content', text: 'English content'
-      expect(page).to have_css '.notes',   text: 'Notes are not translated!'
-    end
-
-    # German page falls back to English as no translation done yet!
-    visit page_path(@page, locale: :de)
-
-    expect(page).to have_active_navigation_items 'English navigation title'
-    expect(page).to have_headline 'English title'
-
-    within dom_id_selector(@page) do
-      expect(page).to have_css '.lead',    text: 'English lead'
-      expect(page).to have_css '.content', text: 'English content'
-      expect(page).to have_css '.notes',   text: 'Notes are not translated!'
-    end
-
-    # Let's translate stuff now!
-    visit edit_page_path(@page, locale: :de)
-
-    expect(page).to have_css '#page_title[value="English title"]' # Inputs are pre-filled with fallback values (English)
-    expect(page).to have_css '#page_navigation_title[value="English navigation title"]'
-    expect(page).to have_css '#page_lead',    text: 'English lead'
-    expect(page).to have_css '#page_content', text: 'English content'
-
-    fill_in 'page_title',            with: 'Deutscher Titel'
-    fill_in 'page_navigation_title', with: 'Deutscher Navigations-Titel'
-    fill_in 'page_lead',             with: 'Deutscher Lead'
-    fill_in 'page_content',          with: 'Deutscher Inhalt'
-    fill_in 'page_notes',            with: 'Notizen werden nicht übersetzt!'
-
-    click_button 'Seite aktualisieren'
-
-    # Now it's nice German!
-    expect(page).to have_active_navigation_items 'Deutscher Navigations-Titel'
-    expect(page).to have_headline 'Deutscher Titel'
-
-    within dom_id_selector(@page) do
-      expect(page).to have_css '.lead',    text: 'Deutscher Lead'
-      expect(page).to have_css '.content', text: 'Deutscher Inhalt'
-      expect(page).to have_css '.notes',   text: 'Notizen werden nicht übersetzt!'
-    end
-
-    # And English is still English!
-    visit page_path(@page)
-
-    expect(page).to have_active_navigation_items 'English navigation title'
-    expect(page).to have_headline 'English title'
-
-    within dom_id_selector(@page) do
-      expect(page).to have_css '.lead',    text: 'English lead'
-      expect(page).to have_css '.content', text: 'English content'
-      expect(page).to have_css '.notes',   text: 'Notizen werden nicht übersetzt!' # Notes are the same in both English and German
-    end
-  end
-
-  it 'allows to translate a page to German' do
-    @page = create :page, creator: @user, title: 'English title'
-
-    visit edit_page_path @page, locale: :de # Default locale (English)
-
-    expect(page).to have_css 'input#page_title[value="English title"]'
-    fill_in 'page_title', with: 'German title'
-
-    expect {
-      click_button 'Seite aktualisieren'
-      @page.reload
-    } .to  change { @page.title }.from('English title').to('German title')
-      .and change { @page.title_de }.from(nil).to('German title')
-    expect(@page.title_en).to eq 'English title'
-
-    expect(page).to have_flash 'Seite wurde erfolgreich bearbeitet.'
   end
 end

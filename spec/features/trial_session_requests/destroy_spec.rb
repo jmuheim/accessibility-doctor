@@ -1,31 +1,18 @@
 require 'rails_helper'
 
-describe 'Deleting page' do
+describe 'Deleting trial session request' do
   before do
-    @user = create :user
-    @page = create :page, creator: @user, images: [create(:image, creator: @user)]
+    @user = create :user, role: 'admin'
+    @trial_session_request = create :trial_session_request
   end
 
-  context 'signed in as user' do
-    before { login_as(@user) }
+  before { login_as(create :user, :admin) }
 
-    it 'does not grant permission to delete page' do
-      visit_delete_path_for(@page)
+  it 'deletes a trial session request' do
+    expect {
+      visit_delete_path_for(@trial_session_request)
+    }.to change { TrialSessionRequest.count }.by -1
 
-      expect(page).to have_flash('You are not authorized to access this page.').of_type :alert
-    end
-  end
-
-  context 'signed in as admin' do
-    before { login_as(create :user, :admin) }
-
-    it 'grants permission to delete page' do
-      expect {
-        visit_delete_path_for(@page)
-      }.to change { Page.count }.by(-1)
-      .and change { Image.count }.by -1
-
-      expect(page).to have_flash 'Page was successfully destroyed.'
-    end
+    expect(page).to have_flash 'Trial Session Request was successfully destroyed.'
   end
 end

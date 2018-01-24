@@ -1,28 +1,9 @@
 = container_for @trial_session_request do
   - if user_signed_in? && current_user.role.admin?
-    = headline_with_flash @trial_session_request.id
+    = headline_with_flash @trial_session_request.name
 
     .row
       .col-md-8
-        dl.dl-horizontal
-          - if @trial_session_request.url?
-            dt = TrialSessionRequest.human_attribute_name :url
-            dd.url = link_to @trial_session_request.url, @trial_session_request.url
-
-          dt = TrialSessionRequest.human_attribute_name :language
-          dd.language_text = @trial_session_request.language_text
-
-          dt = TrialSessionRequest.human_attribute_name :name
-          dd.name = @trial_session_request.name
-
-          - if @trial_session_request.company?
-            dt = TrialSessionRequest.human_attribute_name :company
-            dd.company = @trial_session_request.company
-
-          dt = TrialSessionRequest.human_attribute_name :email
-          dd.email = mail_to @trial_session_request.email
-
-
         .availability
           h2 = TrialSessionRequest.human_attribute_name :availability
           pre = @trial_session_request.availability
@@ -42,6 +23,23 @@
           h2 = t 'shared.show.additional_information'
 
           dl.dl-horizontal
+            - if @trial_session_request.url?
+              dt = TrialSessionRequest.human_attribute_name :url
+              dd.url = link_to @trial_session_request.url, @trial_session_request.url
+
+            dt = TrialSessionRequest.human_attribute_name :language
+            dd.language = @trial_session_request.language_text
+
+            dt = TrialSessionRequest.human_attribute_name :name
+            dd.name = @trial_session_request.name
+
+            - if @trial_session_request.company?
+              dt = TrialSessionRequest.human_attribute_name :company
+              dd.company = @trial_session_request.company
+
+            dt = TrialSessionRequest.human_attribute_name :email
+            dd.email = mail_to @trial_session_request.email
+
             dt.created_at = TrialSessionRequest.human_attribute_name :created_at
             dd.created_at = l @trial_session_request.created_at
 

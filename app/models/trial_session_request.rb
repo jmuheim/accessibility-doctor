@@ -10,7 +10,7 @@ class TrialSessionRequest < ApplicationRecord
   validates :time_zone, presence: true
   validates :name, presence: true
   validates :company, presence: true
-  validates :email, presence: true
+  validates :email, presence: true # TODO: Mail!
   validates :how_found_us, presence: true
   validates :agree_to_terms_and_conditions, presence: true
   validates :url, url: { allow_nil: true }
