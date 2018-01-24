@@ -1,0 +1,10 @@
+markdown:
+  # New request for a trial session
+
+  #{@trial_session_request.name} from #{@trial_session_request.company} has requested a trial session.
+
+  The client specified the following availability:
+
+  > <pre>#{@trial_session_request.availability}</pre>
+
+  Please #{link_to 'act upon the request', trial_session_request_url(@trial_session_request, locale: :de)} soon!

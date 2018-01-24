@@ -1,0 +1,9 @@
+tr id=dom_id(trial_session_request)
+  th.name     = link_to trial_session_request.name, trial_session_request
+  td.url      = link_to trial_session_request.url, trial_session_request.url if trial_session_request.url.present?
+  td.company  = trial_session_request.company
+  td.email    = mail_to trial_session_request.email
+  td.language = trial_session_request.language_text
+
+  td.actions
+    == render 'shared/index/actions', resource: trial_session_request

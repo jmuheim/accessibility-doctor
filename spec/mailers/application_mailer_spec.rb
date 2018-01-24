@@ -5,7 +5,7 @@ RSpec.describe ApplicationMailer do
     it 'returns the email with app name' do
       mailer = ApplicationMailer.new
 
-      expect(mailer.send :email_with_name, 'test@example.com').to eq 'Base Project (Base) <test@example.com>'
+      expect(mailer.send :email_with_name, 'test@example.com').to eq 'Accessibility Doctor (A11y-Doc) <test@example.com>'
     end
   end
 end

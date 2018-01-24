@@ -18,7 +18,7 @@ describe MarkdownHelper do
   describe '#indent_heading_level' do
     describe 'indentation' do
       it 'indents heading levels (marked with dashes) by a certain amount' do
-        string = "# This is h1\n\n##This is h2\n\n # This is nothing\n\n #This too"
+        string = "# This is h1\n\n## This is h2\n\n # This is nothing\n\n #This too"
         result = markdown indent_heading_level(string, 2)
 
         expect(result).to eq "<h3 id=\"this-is-h1\">This is h1</h3>\n<h4 id=\"this-is-h2\">This is h2</h4>\n<p># This is nothing</p>\n<p>#This too</p>"
@@ -27,7 +27,7 @@ describe MarkdownHelper do
 
     describe 'visual heading level indentation' do
       it 'adds a class "h#" for a provided visual heading level' do
-        string = "# This is h1\n\n##This is h2\n\nSome text"
+        string = "# This is h1\n\n## This is h2\n\nSome text"
         result = markdown indent_heading_level(string, 2, 1)
 
         expect(result).to eq "<h3 id=\"this-is-h1\" class=\"h1\">This is h1</h3>\n<h4 id=\"this-is-h2\" class=\"h2\">This is h2</h4>\n<p>Some text</p>"
@@ -36,7 +36,7 @@ describe MarkdownHelper do
 
     describe 'exceeding heading level limit of 6' do
       it 'adds a role="heading" and aria-level="X"' do
-        string = "# This is h1\n\n##This is h2\n\n### This is h3\n\nSome text"
+        string = "# This is h1\n\n## This is h2\n\n### This is h3\n\nSome text"
         result = markdown indent_heading_level(string, 5)
 
         expect(result).to eq "<h6 id=\"this-is-h1\">This is h1</h6>\n<p id=\"this-is-h2\" role=\"heading\" aria-level=\"7\">This is h2</p>\n<p id=\"this-is-h3\" role=\"heading\" aria-level=\"8\">This is h3</p>\n<p>Some text</p>"

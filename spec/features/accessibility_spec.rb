@@ -42,16 +42,16 @@ describe 'Accessibility' do
   describe 'page title' do
     it "displays the app name suffix on every page except the home page" do
       visit root_path
-      expect(page).to have_title 'Welcome to Base!'
+      expect(page).to have_title 'Welcome to Accessibility Doctor!'
 
       visit page_path(create :page, creator: create(:user))
-      expect(page).to have_title 'Page test title - Base'
+      expect(page).to have_title 'Page test title - A11y-Doc'
     end
 
     it 'prepends flash messages' do
       visit new_user_registration_path
       click_button 'Sign up'
-      expect(page).to have_title 'Alert: User could not be created. Sign up - Base'
+      expect(page).to have_title 'Alert: User could not be created. Sign up - A11y-Doc'
     end
   end
 end

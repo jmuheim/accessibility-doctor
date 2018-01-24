@@ -40,6 +40,9 @@ class Ability
     can :read,  Page
 
     can :create, User
+
+    can :create, TrialSessionRequest
+    can(:read, TrialSessionRequest) { |trial_session_request| trial_session_request.created_at > 1.minutes.ago } # This is the easiest way to show a "Thank you" page immediately to the user, but in general it shouldn't be possible to read trial session requests for guests!
   end
 
   def define_abilities_for_users(current_user)
@@ -72,6 +75,8 @@ class Ability
     can [:index, :read], Image
 
     can :crud, Page
+
+    can :crud, TrialSessionRequest
 
     can [:index, :create, :read, :update], User
     can(:destroy, User) { |user| user != current_user }

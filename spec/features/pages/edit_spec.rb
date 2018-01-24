@@ -29,9 +29,9 @@ describe 'Editing page' do
 
     visit edit_page_path(@page)
 
-    expect(page).to have_title 'Edit Page test title - Base'
+    expect(page).to have_title 'Edit Page test title - A11y-Doc'
     expect(page).to have_active_navigation_items 'Cool parent page', 'Cool navigation title'
-    expect(page).to have_breadcrumbs 'Base', 'Cool parent page', 'Cool navigation title', 'Edit'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Cool parent page', 'Cool navigation title', 'Edit'
     expect(page).to have_headline 'Edit Page test title'
 
     expect(page).to have_css 'h2', text: 'Information about organising pages as tree hierarchy'

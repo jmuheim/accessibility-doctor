@@ -20,6 +20,13 @@ nav#navigation.container
         h3.sr-only = t '.content_navigation'
 
         ul#content_navigation.nav.navbar-nav
+          - if can? :index, TrialSessionRequest
+            == render 'layouts/resource_navigation_group', resource_class: TrialSessionRequest
+          - else
+            = navigation_item new_trial_session_request_path do
+              = icon 'thumbs-o-up', type: :fa
+              =< t '.new_trial_session_request'
+
           - @root_pages.each do |page|
             - if (children = page.children).any?
               = navigation_group page.navigation_title_or_title, page_path(page) do

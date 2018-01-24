@@ -13,6 +13,18 @@ de:
         navigation_title: Erscheint in Menüs und Breadcrumb. Leer lassen um Titel zu verwenden.
         notes: Nur für den internen Gebrauch bestimmt (nicht öffentlich einsehbar).
         title: Erscheint als Haupt-Überschrift beim Anzeigen der Seite.
+      trial_session_request:
+        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/pages/1">Allgemeine Geschäftsbedingungen</a>'
+        availability: Bitten geben Sie mir ein oder mehrere Zeitfenster an, welches Ihnen passen würde für die 15 minütige Session. Mit etwas Glück werde ich bei meiner Kontaktaufnahme eines derselben bestätigen können; ansonsten werde ich Ihnen Alternativen vorschlagen.
+        description: Weitere Details und Anmerkungen, etwa Informationen über die zu testende Website, aber auch Fragen zum Thema Barrierefreiheit oder Vorschläge zur potenziellen weiteren Zusammenarbeit.
+        duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
+        email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
+        how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
+        humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies ist ein Schutz vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
+        language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
+        message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
+        time_zone: Bitte nennen Sie Ihre Zeitzone, damit ich potenzielle Zeitunterschiede zwischen Ihnen und mir (Schweiz, GMT+1) berücksichtigen kann.
+        url: Die Angabe der zu testenden Website erlaubt mir, die Session optimal zu planen. Wir können aber auch adhoc eine Website wählen.
       user:
         about: Schreib etwas über dich (Biographie, Interessen, Hobbies...). Du kannst Pandoc Markdown verwenden zum Formatieren.
         humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies ist ein Schutz vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
@@ -20,8 +32,8 @@ de:
     inputs:
       autocomplete:
         help: Schlägt Optionen vor (Filter-Text eingeben oder Pfeiltaste hoch/runter)
-        number_filtered: '[number] von [total] Optionen für [filter]'
-        number_in_total: '[number] Optionen total'
+        number_filtered: "[number] von [total] Optionen für [filter]"
+        number_in_total: "[number] Optionen total"
         options_for: Vorschläge für %{attribute}
       better_text:
         allows_pasting_of_resources: Erlaubt das Einfügen von Bildern und CodePen-Links als Ressourcen
@@ -42,6 +54,9 @@ de:
         remove_file: Existierende %{attribute}-Datei entfernen
         reset_selection: "%{attribute}-Dateiauswahl zurücksetzen"
     'no': Nein
+    placeholders:
+      trial_session_request:
+        url: http://www.example.com
     required:
       mark: "*"
       text: Pflichtfeld

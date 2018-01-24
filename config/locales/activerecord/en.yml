@@ -30,6 +30,19 @@ en:
       paper_trail/version:
         created_at: Created at
         whodunnit: Whodunnit
+      trial_session_request:
+        agree_to_terms_and_conditions: Yes, I accept the General Terms and Conditions!
+        availability: Availability
+        company: Company
+        description: Description
+        duration: Duration
+        email: Email
+        how_found_us: How did you find me?
+        language: Language
+        message: Personal message
+        name: Name
+        time_zone: Time zone
+        url: Website
       user:
         about: About
         avatar: Profile picture
@@ -64,6 +77,9 @@ en:
       paper_trail/version:
         one: Version
         other: Versions
+      trial_session_request:
+        one: Trial Session Request
+        other: Trial Session Requests
       user:
         one: User
         other: Users

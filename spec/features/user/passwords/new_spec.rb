@@ -6,9 +6,9 @@ describe 'Requesting new password' do
   it 'is possible to request a new password' do
     visit new_user_password_path
 
-    expect(page).to have_title 'Forgot your password? - Base'
+    expect(page).to have_title 'Forgot your password? - A11y-Doc'
     expect(page).to have_active_navigation_items 'Sign in'
-    expect(page).to have_breadcrumbs 'Base', 'Sign in', 'Forgot your password?'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Sign in', 'Forgot your password?'
     expect(page).to have_headline 'Forgot your password?'
 
     within '.frequently_occuring_sign_in_problems' do

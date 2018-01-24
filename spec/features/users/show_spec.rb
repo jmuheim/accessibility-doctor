@@ -11,9 +11,9 @@ describe 'Showing user' do
 
     visit user_path(other_user)
 
-    expect(page).to have_title 'User test name - Base'
+    expect(page).to have_title 'User test name - A11y-Doc'
     expect(page).to have_active_navigation_items 'Users'
-    expect(page).to have_breadcrumbs 'Base', 'Users', 'User test name'
+    expect(page).to have_breadcrumbs 'A11y-Doc', 'Users', 'User test name'
     expect(page).to have_headline 'User test name'
 
     within dom_id_selector(other_user) do
@@ -23,7 +23,7 @@ describe 'Showing user' do
 
       within '.about' do
         expect(page).to have_css 'h2', text: 'About'
-        expect(page).to have_css 'h3', text: "Here's some info about me"
+        expect(page).to have_css 'h3', text: "Here’s some info about me"
         expect(page).to have_content 'Bla bla bla.'
       end
 

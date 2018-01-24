@@ -1,6 +1,16 @@
 ---
 en:
   enumerize:
+    trial_session_request:
+      duration:
+        quarter_hour: Quarter hour (15 minutes)
+      how_found_us:
+        other: Other
+        recommendation: Recommendation
+        search_engine: Search engine (e.g. Google)
+      language:
+        de: German
+        en: English
     user:
       role:
         admin: Administrator
