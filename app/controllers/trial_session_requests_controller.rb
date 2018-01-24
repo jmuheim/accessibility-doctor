@@ -37,9 +37,9 @@ class TrialSessionRequestsController < ApplicationController
                                                   :message,
                                                   :agree_to_terms_and_conditions,
                                                   :lock_version,
+                                                  :humanizer_question_id,
                                                   :humanizer_answer,
-                                                  :language,
-                                                  :humanizer_question_id)
+                                                  :language)
   end
 
   def add_breadcrumbs

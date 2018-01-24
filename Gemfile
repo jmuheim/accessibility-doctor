@@ -37,8 +37,6 @@ gem 'acts_as_list' # An ActiveRecord plugin for managing lists
 
 gem 'premailer-rails' # CSS styled emails without the hassle
 
-gem 'rspec-mail-matchers'
-
 # jQuery
 gem 'jquery-rails'
 gem 'jquery-ui-rails' # jQuery UI components
