@@ -23,7 +23,7 @@ describe 'Showing user' do
 
       within '.about' do
         expect(page).to have_css 'h2', text: 'About'
-        expect(page).to have_css 'h3', text: "Here’s some info about me"
+        expect(page).to have_css 'h3', text: "Here's some info about me"
         expect(page).to have_content 'Bla bla bla.'
       end
 
