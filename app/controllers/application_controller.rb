@@ -30,6 +30,16 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
+  # Record when a form is displayed
+  def set_form_timestamp
+    session[:form_timestamp] = Time.now
+  end
+
+  # Calculate how long it took to fill out the form
+  def time_required_for_input
+    Time.now - (session[:form_timestamp] || Time.now)
+  end
+
   protected
 
   # https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address

@@ -61,6 +61,7 @@ de:
         update: Aktualisieren
       versions:
         no_changes: Keine Änderungen in dieser Version
+    to_fast: Ihre Eingabe war zu schnell
   trial_session_request_mailer:
     thank_you:
       subject: Ihre Anfrage bezüglich einer Probe-Session mit Accessibility Doctor

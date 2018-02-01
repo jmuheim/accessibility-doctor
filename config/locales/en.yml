@@ -61,6 +61,7 @@ en:
         update: Update
       versions:
         no_changes: No changes in this version
+    to_fast: You filled out the form to fast
   trial_session_request_mailer:
     thank_you:
       subject: Thank you for your request for a demo session with Accessibility-Doctor.com

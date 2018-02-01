@@ -1,7 +1,29 @@
 require 'rails_helper'
 
 describe 'Signing up' do
+  it 'blocks users signed up to fast' do
+    visit new_user_registration_path
+
+    expect(page).to have_css 'legend h2', text: 'Account information'
+
+    fill_in 'user_name', with: 'newuser'
+    fill_in 'user_email', with: 'newuser@example.com'
+
+    expect(page).to have_css 'legend h2', text: 'Choose a password'
+    fill_in 'user_password',              with: 'somegreatpassword'
+    fill_in 'user_password_confirmation', with: 'somegreatpassword'
+
+    expect(page).to have_css 'legend h2', text: 'Security question (CAPTCHA)'
+    fill_in 'user_humanizer_answer', with: '5'
+
+    click_button 'Sign up'
+
+    expect(page).to have_content 'You filled out the form to fast'
+  end
+
   it 'signs up a new user and lets him confirm his email' do
+    allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
+    
     visit new_user_registration_path
 
     expect(page).to have_title 'Sign up - A11y-Doc'
@@ -46,6 +68,9 @@ describe 'Signing up' do
   end
 
   describe 'avatar upload' do
+    before do
+      allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
+    end
     it 'caches an uploaded avatar during validation errors' do
       visit new_user_registration_path
 
@@ -125,6 +150,10 @@ describe 'Signing up' do
   end
 
   describe 'curriculum_vitae upload' do
+    before do
+      allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
+    end
+
     it 'caches an uploaded curriculum_vitae during validation errors' do
       visit new_user_registration_path
 
@@ -202,6 +231,7 @@ describe 'Signing up' do
   end
 
   it 'prevents from signing up on wrong CAPTCHA' do
+    allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
     visit new_user_registration_path
 
     fill_in 'user_humanizer_answer', with: '123'
