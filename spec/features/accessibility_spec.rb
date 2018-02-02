@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 describe 'Accessibility' do
+  before do
+    allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
+  end
+
   describe 'required form fields' do
     it 'displays a visually hidden text "(required)" at the end of the label' do
       visit new_user_registration_path
