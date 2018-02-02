@@ -18,12 +18,12 @@ describe 'Signing up' do
 
     click_button 'Sign up'
 
-    expect(page).to have_content 'You filled out the form to fast'
+    expect(page).to have_flash('You filled out the form to fast').of_type :alert
   end
 
   it 'signs up a new user and lets him confirm his email' do
     allow_any_instance_of(User::RegistrationsController).to receive(:time_required_for_input).and_return(666.seconds)
-    
+
     visit new_user_registration_path
 
     expect(page).to have_title 'Sign up - A11y-Doc'

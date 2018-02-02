@@ -1,6 +1,9 @@
 require 'application_responder'
 
 class ApplicationController < ActionController::Base
+  # Time a user should need at minimum to fill out a form. Otherwise we assume a spam bot
+  MIN_INPUT_TIME = 6.seconds
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
@@ -38,6 +41,14 @@ class ApplicationController < ActionController::Base
   # Calculate how long it took to fill out the form
   def time_required_for_input
     Time.now - (session[:form_timestamp] || Time.now)
+  end
+
+  # We measure the time a user needs to fill out a form. If it is to fast, we assume a bot and stopp the action call.
+  def protect_from_spam_bots
+    return true if time_required_for_input > MIN_INPUT_TIME
+    flash[:alert] = t 'shared.to_fast'
+    redirect_back(fallback_location: root_path)
+    return false
   end
 
   protected
