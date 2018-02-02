@@ -1,7 +1,28 @@
 require 'rails_helper'
 
 describe 'Creating trial session request' do
+  it 'blocks users signed up to fast' do
+    visit new_trial_session_request_path
+
+    expect(page).to have_css 'legend h2', text: 'Personal details'
+    fill_in 'trial_session_request_name',    with: 'Hans Muster'
+    fill_in 'trial_session_request_company', with: 'Muster Webdesign GmbH'
+    fill_in 'trial_session_request_email',   with: 'hans@muster-webdesign.com'
+
+    expect(page).to have_css 'legend h2', text: 'Details about the desired session'
+    fill_in 'trial_session_request_availability', with: "Kommender Donnerstag, 20. Februar, zwischen 14 und 16 Uhr.\n\nOder am kommenden Freitag, 21. Februar, ganzer Tag."
+    select '(GMT+02:00) Athens', from: 'trial_session_request_time_zone'
+
+    expect(page).to have_css 'legend h2', text: 'Additional details'
+    check 'trial_session_request_agree_to_terms_and_conditions'
+
+    click_button 'Create Trial Session Request'
+
+    expect(page).to have_flash('You filled out the form to fast').of_type :alert
+  end
+
   it 'creates a trial session request and sends an email' do
+    allow_any_instance_of(TrialSessionRequestsController).to receive(:time_required_for_input).and_return(666.seconds)
     visit new_trial_session_request_path
 
     expect(page).to have_title 'Create Trial Session Request - A11y-Doc'
