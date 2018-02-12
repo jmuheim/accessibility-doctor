@@ -12,7 +12,7 @@ require 'mina/git'
 set :application_name, 'Base'
 set :domain, 'menkent.uberspace.de'
 set :deploy_to, '/home/ghctest/rails'
-set :repository, 'git@github.com:jmuheim/accessibility-doctor.git'
+set :repository, 'https://github.com/jmuheim/accessibility-doctor.git'
 set :branch, ENV['branch'] || `git rev-parse --abbrev-ref HEAD`.strip
 
 # Optional settings:
