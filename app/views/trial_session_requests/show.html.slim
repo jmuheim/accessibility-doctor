@@ -15,11 +15,6 @@
             h2 = TrialSessionRequest.human_attribute_name :message
             pre = @trial_session_request.message
 
-        - if @trial_session_request.notes?
-          .notes
-            h2 = TrialSessionRequest.human_attribute_name :notes
-            pre = @trial_session_request.notes
-
       .col-md-4
         .additional_information
           h2 = t 'shared.show.additional_information'
