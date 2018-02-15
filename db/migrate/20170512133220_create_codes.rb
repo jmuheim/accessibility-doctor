@@ -3,7 +3,7 @@ class CreateCodes < ActiveRecord::Migration[5.0]
     create_table :codes do |t|
       t.string :title, null: false
       t.string :identifier, null: false
-      t.references :page, foreign_key: true
+      t.references :page, foreign_key: false
       t.text :html
       t.text :css
       t.text :js
