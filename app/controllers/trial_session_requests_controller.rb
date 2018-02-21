@@ -2,6 +2,8 @@ class TrialSessionRequestsController < ApplicationController
   load_and_authorize_resource
   provide_optimistic_locking
   before_action :add_breadcrumbs
+  before_action :protect_from_spam_bots, only: :create
+  after_action :set_form_timestamp, only: [:new, :create]
   respond_to :html
 
   def create
