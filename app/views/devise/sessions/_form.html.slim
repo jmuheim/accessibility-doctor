@@ -12,7 +12,7 @@
     - if devise_mapping.rememberable?
       = f.input :remember_me, as: :boolean
 
-    = f.button :submit, t('.sign_in'), class: 'btn-success'
+    = f.button :submit, t('.sign_in'), class: 'btn-danger'
 
   - if display == :small
     .visit_full_sign_in_page

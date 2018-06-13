@@ -8,6 +8,12 @@ en:
     save: Save
   'false': 'No'
   homepage:
+    i_am:
+      title: I am
+    i_charge:
+      title: I charge
+    i_offer:
+      title: I offer
     news:
       title: Latest news
     show:

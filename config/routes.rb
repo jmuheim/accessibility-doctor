@@ -20,6 +20,10 @@ Rails.application.routes.draw do
       get code, to: 'errors#show', code: code
     end
 
+    get 'i_am', to: 'homepage#i_am', as: 'i_am'
+    get 'i_offer', to: 'homepage#i_offer', as: 'i_offer'
+    get 'i_charge', to: 'homepage#i_charge', as: 'i_charge'
+
     root 'homepage#show'
 
     # The priority is based upon order of creation: first created -> highest priority.

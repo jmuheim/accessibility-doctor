@@ -6,6 +6,7 @@ nav#navigation.container
       .navbar-header
         // Place brand before the "Toggle navigation" button to have an intuitive focus order (on the Bootstrap examples page it's after the button which seems unintuitive)
         = link_to root_path, class: home_link_class, id: 'logo' do
+          => icon 'user-md', type: :fa
           = t('.home')
           span.sr-only =< t('.go_to_home_page')
 
@@ -20,6 +21,18 @@ nav#navigation.container
         h3.sr-only = t '.content_navigation'
 
         ul#content_navigation.nav.navbar-nav
+          = navigation_item i_am_path do
+            => icon 'user', type: :fa
+            | Ich bin
+
+          = navigation_item i_offer_path do
+            => icon 'edit', type: :fa
+            | Ich biete
+
+          = navigation_item i_charge_path do
+            => icon 'money', type: :fa
+            | Ich koste
+
           - if can? :index, TrialSessionRequest
             == render 'layouts/resource_navigation_group', resource_class: TrialSessionRequest
           - else
@@ -60,12 +73,13 @@ nav#navigation.container
                   =< t('.admin')
 
           - else
-            = navigation_item new_user_registration_path do
-              span.visible-sm-inline-block = icon 'user-plus', type: :fa
-              span.hidden-sm = t '.sign_up'
+            .sr-only
+              = navigation_item new_user_registration_path do
+                span.visible-sm-inline-block = icon 'user-plus', type: :fa
+                span.hidden-sm = t '.sign_up'
 
-            = navigation_mega t('.sign_in'), new_user_session_path do
-              .row = render 'devise/sessions/form', resource: User.new, display: :small
+              = navigation_mega t('.sign_in'), new_user_session_path do
+                .row = render 'devise/sessions/form', resource: User.new, display: :small
 
           li#locale_chooser.dropdown
             = link_to '#', class: 'dropdown-toggle', 'data-toggle': 'dropdown', 'aria-expanded': false do

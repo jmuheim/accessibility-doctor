@@ -8,10 +8,16 @@ de:
     save: Speichern
   'false': Nein
   homepage:
+    i_am:
+      title: Ich bin
+    i_charge:
+      title: I koste
+    i_offer:
+      title: I biete
     news:
       title: Letzte Neuigkeiten
     show:
-      title: Willkommen auf Accessibility Doctor!
+      title: Willkommen bei Accessibility Doctor!
     statistics:
       number_of_resource: Anzahl %{resource}
       title: Statistiken

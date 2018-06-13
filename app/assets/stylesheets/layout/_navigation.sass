@@ -15,6 +15,9 @@
       background-color: $navbar-inverse-link-active-bg
       color: $navbar-inverse-link-active-color
 
+  .navbar-collapse
+    border-color: $navbar-inverse-toggle-border-color !important
+
 .navbar
   .caret
     margin-left: 5px
@@ -30,6 +33,42 @@
     color: #fff
     padding-right: 10px
     line-height: 14px
+
+.navbar,
+.navbar-inverse
+  .navbar-brand
+    &.active
+      &,
+      &:hover
+        background-color: $link-color
+        color: #fff
+
+    &:focus,
+    &:hover
+      outline-offset: -1px
+      background-color: $navbar-inverse-link-hover-bg
+
+  a:focus
+    outline: 1px solid #fff
+    outline-offset: -1px
+
+  li.active,
+  li.open
+    > a
+
+    li
+      a:focus
+        outline: 1px solid $link-color
+
+.dropdown-menu
+  margin-left: -1px // Make up for the 1px outline
+
+  a:focus
+    outline: 1px solid $link-color
+    outline-offset: 0
+
+.navbar-nav > li
+  margin-left: 1px
 
 #jump_links
   margin: 0 /* Otherwise, Bootstrap adds a -15px margin */
@@ -94,3 +133,7 @@
 
     a
       margin-right: 4px
+
+#logo
+  .fa
+    line-height: 0
