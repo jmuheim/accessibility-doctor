@@ -10,13 +10,13 @@ require 'mina/git'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :application_name, 'Base'
-set :domain, 'menkent.uberspace.de'
+set :domain, 'gacrux.uberspace.de'
 set :deploy_to, '/home/ghctest/rails'
 set :repository, 'https://github.com/jmuheim/accessibility-doctor.git'
 set :branch, ENV['branch'] || `git rev-parse --abbrev-ref HEAD`.strip
 
 # Optional settings:
-set :user, 'ghctest'          # Username in the server to SSH to.
+set :user, 'a11ydoc'          # Username in the server to SSH to.
 #   set :port, '30000'           # SSH port number.
 set :forward_agent, true   # SSH forward_agent.
 
