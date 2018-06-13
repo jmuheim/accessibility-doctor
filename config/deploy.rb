@@ -11,7 +11,7 @@ require 'mina/git'
 
 set :application_name, 'Base'
 set :domain, 'gacrux.uberspace.de'
-set :deploy_to, '/home/ghctest/rails'
+set :deploy_to, '/home/a11ydoc/rails'
 set :repository, 'https://github.com/jmuheim/accessibility-doctor.git'
 set :branch, ENV['branch'] || `git rev-parse --abbrev-ref HEAD`.strip
 
