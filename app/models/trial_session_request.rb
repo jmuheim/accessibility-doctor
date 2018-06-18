@@ -17,7 +17,7 @@ class TrialSessionRequest < ApplicationRecord
 
   enumerize :duration, in: [:quarter_hour], default: :quarter_hour
   enumerize :language, in: [:en, :de], default: :en
-  enumerize :how_found_us, in: [:search_engine, :recommendation, :other]
+  enumerize :how_found_us, in: [:adg_go_live, :search_engine, :recommendation, :other]
 
   before_validation :add_url_protocol_if_missing!
 

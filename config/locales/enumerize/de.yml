@@ -5,6 +5,7 @@ de:
       duration:
         quarter_hour: Viertelstunde (15 Minuten)
       how_found_us:
+        adg_go_live: Go-Live-Event des Accessibility Developer Guide
         other: Anderes
         recommendation: Empfehlung
         search_engine: Suchmaschine (z.B. Google)

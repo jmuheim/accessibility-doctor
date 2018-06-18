@@ -5,6 +5,7 @@ en:
       duration:
         quarter_hour: Quarter hour (15 minutes)
       how_found_us:
+        adg_go_live: Go live event of Accessibility Developer Guide
         other: Other
         recommendation: Recommendation
         search_engine: Search engine (e.g. Google)
