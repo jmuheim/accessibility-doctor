@@ -75,21 +75,4 @@
             =< icon 'smile-o', type: :fa
 
   .col-md-4
-    .alert.alert-success
-      h2.h4
-        span style="font-size: 16px; display: inline-block; width: 100%; font-weight: normal; margin-bottom: 6px" Angebot zum Kennenlernen:
-        => icon 'youtube-play', type: :fa
-        | Kostenlose live remote Prüf-Session!
-
-      p <strong>Ich teste live</strong> Ihre Website auf Barrierefreiheit - Sie schauen mir mittels Screen-Sharing dabei zu!
-
-      .markdown
-        .figure
-          = image_tag 'homepage/live-remote-session.jpg', class: 'image', alt: 'Screenshot einer laufenden Prüf-Session'
-          / p.caption aria-hidden=true Screenshot einer laufenden Prüf-Session
-
-      p <strong>Sie werden staunen</strong>, was Sie in so kurzer Zeit alles über Barrierefreiheit lernen - und <strong>überzeugt sein</strong> von einer weiteren Zusammenarbeit.
-
-      p: a.btn.btn-success href=new_trial_session_request_path
-        => icon 'hand-o-right', type: :fa
-        | Reservieren Sie jetzt Ihre Session!
+    == render 'welcome_offer'

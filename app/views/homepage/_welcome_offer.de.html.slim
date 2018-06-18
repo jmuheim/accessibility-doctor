@@ -1,0 +1,18 @@
+.alert.alert-success
+  h2.h4
+    span style="font-size: 16px; display: inline-block; width: 100%; font-weight: normal; margin-bottom: 6px" #{t '.welcome_offer'}:
+    => icon 'youtube-play', type: :fa
+    | #{t '.free_session'}!
+
+  == render 'homepage/welcome_offer/first_consultation_free'
+
+  .markdown
+    .figure
+      = image_tag 'homepage/live-remote-session.jpg', class: 'image', alt: 'Ein laufender Live-Test einer Website (per Skype)'
+      p.caption aria-hidden=true Ein laufender Live-Test einer Website (per Skype)
+
+  == render 'homepage/welcome_offer/you_will_be_amazed'
+
+  p: a.btn.btn-success href=new_trial_session_request_path
+    => icon 'hand-o-right', type: :fa
+    | #{t '.book_now'}

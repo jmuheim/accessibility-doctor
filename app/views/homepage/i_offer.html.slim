@@ -6,28 +6,35 @@
     .lead
       p Im Zentrum meiner Dienstleistungen steht die konsequente <strong>Weitergabe meiner Expertise</strong> an den Kunden durch <strong>"Learning by doing"</strong> - ganz gemäss dem Leitsatz <strong>"Hilfe zur Selbsthilfe"</strong>.
 
+      p Ob bei Ihnen vor Ort oder "remote" per Videotelefonie: ich helfe <strong>schnell, zielführend und effizient</strong>.
+
     hr
 
 .row
-  .col-md-6
+  .col-md-8
     h3
       | #{icon 'comments-o', type: :fa} Beratung
 
-    h3
-      => icon :users, type: :fa
-      | Workshops
+    markdown:
+      Ich berate Sie zu allen möglichen Themen bezüglich Barrierefreiheit, insbesondere zu Fragen rund um:
 
-    p Webinare
+      - [WCAG 2.0 (Web Content Accessibility Guidelines)](https://www.w3.org/WAI/standards-guidelines/wcag/) sowie [2.1](https://www.w3.org/TR/WCAG21/)
+      - [ARIA (Accessible Rich Internet Applications)](https://www.w3.org/TR/wai-aria/)
+      - [BBC Mobile Accessibility Guidelines](http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile)
 
-    h3
-      => icon 'code', type: :fa
-      | Prototyping
+      Gerne gebe ich Auskunft über alltägliche Fragen, welche bei den meisten Projekten auftreten, etwa:
 
-  .col-md-6
+      - Ab wann sollte Barrierefreiheit in einem Projekt berücksichtigt werden?
+      - Was ist beim visuellen Layout zu beachten?
+      - Welche Code-Bibliotheken Dritter (Widgets, Templates) sind zugänglich?
+      - Gibt es einen "Kompromiss", welcher bei kleinem Aufwand zu respektabler Barrierefreiheit führt?
+
+    hr
+
     h3 #{icon 'youtube-play', type: :fa} Live Remote Accessibility Testing
 
     markdown:
-      Während einer [Screen-Sharing](https://de.wikipedia.org/wiki/Screen-Sharing)-Session mit Ihnen teste ich Ihre Website auf typische Probleme der Zugänglichkeit - konkret und einfach nachvollziehbar!
+      Während einer [Screen-Sharing (Wikipedia.org)](https://de.wikipedia.org/wiki/Screen-Sharing)-Session mit Ihnen **teste ich Ihre Website live** auf typische Probleme der Zugänglichkeit - konkret und einfach nachvollziehbar!
 
       Ihre Vorteile:
 
@@ -36,6 +43,34 @@
       - Ich gebe laufend Empfehlungen ab, wie Schwächen optimiert werden sollten
       - Sie können sofort Fragen stellen und Kommentare anbringen
 
-      Die vollständige Session wird Ihnen darauf als Video-Mitschnitt zur Verfügung gestellt, so dass Sie diesen nach Bedarf erneut anschauen können. Zudem erhalten Sie eine spezifische Liste von Links zu den für Sie relevanten Tools, Techniken, und weiter führenden Informationen.
+      Die vollständige Session wird Ihnen darauf als **Video-Mitschnitt** zur Verfügung gestellt, so dass Sie diesen nach Bedarf erneut anschauen und alles in Ihrem Tempo nachvollziehen können. Zudem erhalten Sie eine spezifische **Liste von Links** zu den für Sie relevanten Tools, Techniken, und weiter führenden Informationen.
 
-      **Buchen Sie jetzt Ihre erste 15-minütige Session - kostenlos!**
+  .col-md-4
+    == render 'welcome_offer'
+
+.row
+  hr
+
+  .col-md-6
+    h3
+      => icon :users, type: :fa
+      | Coaching & Training
+
+    markdown:
+      Ich vermittle liebend gerne mein Wissen, am besten **direkt am Bildschirm**, zusammen mit Ihren Entwicklern und innerhalb Ihres Projektcodes.
+
+      Als **Coach** begleite ich Entwickler über einen längeren Zeitraum und unterstütze sie darin, sich alle notwendigen technischen Fähigkeiten zu Barrierefreiheit anzueignen.
+
+      Auch auf Ihre spezifischen Bedürfnisse zugeschnittene **Workshops** und **Webinare** gehören zu meinem breiten Angebot.
+
+      Wo immer es um das Vermitteln von **technischem Wissen** rund um Barrierefreiheit geht, behaupte ich eine gute Wahl zu sein.
+
+  .col-md-6
+    h3
+      => icon 'code', type: :fa
+      | Auftragsarbeit
+
+    markdown:
+      Gemäss ihrer Anforderungen erstelle ich gerne für Sie konkrete technische Lösungen (**Prototypen**), welche die Anforderungen an Barrierefreiheit erfüllen.
+
+      Oder ich programmiere als **Teil Ihres Teams** an Ihrem Projekt mit, am liebsten über die gängigen Tools wie etwa [GitHub](https://github.com/) oder [Jira](https://www.atlassian.com/software/jira).

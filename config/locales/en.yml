@@ -9,11 +9,17 @@ en:
   'false': 'No'
   homepage:
     i_am:
+      adg_hack_day: Me (right) at an ADG hack day of the «Accessibility Alliance»
+      fireplace: Me in our new fireplace in the garden, immediately after completion of the same this spring.
       flexible_to_your_needs: Flexible to your needs
       founder_of_the_adg: Founder of the «Accessibility Developer Guide»
       fully_qualified: Fully qualified
+      screenshot_adg: Screenshot of the ADG
       title: I am
     i_charge:
+      hourly_rate: CHF 200.- per hour
+      npo_ngo_pricing_available: NGO/NPO Pricing available
+      philanthropy: 25% Philanthropie
       title: I charge
     i_offer:
       title: I offer
@@ -24,6 +30,10 @@ en:
     statistics:
       number_of_resource: Number of %{resource}
       title: Statistics
+    welcome_offer:
+      book_now: Book your session now
+      free_session: Free get to know session
+      welcome_offer: Welcome offer
   org:
     name: Accessibility Doctor
   pages:
