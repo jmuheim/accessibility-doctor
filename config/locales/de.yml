@@ -26,6 +26,11 @@ de:
     news:
       title: Letzte Neuigkeiten
     show:
+      accessibility: Barrierefreiheit
+      accessibility_definition: Elektronische Medien sind so gestaltet, dass diese auch von Menschen mit Behinderung ohne Erschwernis oder fremde Hilfe genutzt werden können.
+      conviction: Meine feste Überzeugung
+      source: Quelle
+      take_caution: "Aber Vorsicht: Barrierefreiheit ist kein Selbstläufer!"
       title: Willkommen bei Accessibility Doctor!
     statistics:
       number_of_resource: Anzahl %{resource}
@@ -33,6 +38,7 @@ de:
     welcome_offer:
       book_now: Reservieren Sie jetzt Ihre Session
       free_session: Kostenlose Kennenlern-Session
+      running_session: Ein laufender Live-Test einer Website (per Skype)
       welcome_offer: Angebot zum Kennenlernen
   org:
     name: Accessibility Doctor

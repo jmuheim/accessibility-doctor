@@ -26,13 +26,19 @@ en:
     news:
       title: Latest news
     show:
+      accessibility: Accessibility
+      accessibility_definition: Electronic media are designed in such a way that they can also be used by people with disabilities without difficulty or outside help.
+      conviction: My firm conviction
+      source: Source
+      take_caution: "But be careful: Accessibility is not a self-runner!"
       title: Welcome to Accessibility Doctor!
     statistics:
       number_of_resource: Number of %{resource}
       title: Statistics
     welcome_offer:
       book_now: Book your session now
-      free_session: Free get to know session
+      free_session: Free "get to know" session
+      running_session: An ongoing live test of a website (via Skype)
       welcome_offer: Welcome offer
   org:
     name: Accessibility Doctor

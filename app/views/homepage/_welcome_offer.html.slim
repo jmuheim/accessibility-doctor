@@ -8,8 +8,8 @@
 
   .markdown
     .figure
-      = image_tag 'homepage/live-remote-session.jpg', class: 'image', alt: 'Ein laufender Live-Test einer Website (per Skype)'
-      p.caption aria-hidden=true Ein laufender Live-Test einer Website (per Skype)
+      = image_tag 'homepage/live-remote-session.jpg', class: 'image', alt: t('.running_session')
+      p.caption aria-hidden=true = t '.running_session'
 
   == render 'homepage/welcome_offer/you_will_be_amazed'
 

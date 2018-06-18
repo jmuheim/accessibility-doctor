@@ -23,15 +23,15 @@ nav#navigation.container
         ul#content_navigation.nav.navbar-nav
           = navigation_item i_am_path do
             => icon 'user', type: :fa
-            | Ich bin
+            = t 'homepage.i_am.title'
 
           = navigation_item i_offer_path do
             => icon 'edit', type: :fa
-            | Ich biete
+            = t 'homepage.i_offer.title'
 
           = navigation_item i_charge_path do
             => icon 'money', type: :fa
-            | Ich koste
+            = t 'homepage.i_charge.title'
 
           - if can? :index, TrialSessionRequest
             == render 'layouts/resource_navigation_group', resource_class: TrialSessionRequest
