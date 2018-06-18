@@ -22,6 +22,10 @@ en:
       philanthropy: 25% Philanthropie
       title: I charge
     i_offer:
+      coaching_training: Coaching and Training
+      consulting: Consulting
+      contract_work: Contract work
+      live_remote_testing: Live Remote Accessibility Testing
       title: I offer
     news:
       title: Latest news
@@ -30,7 +34,7 @@ en:
       accessibility_definition: Electronic media are designed in such a way that they can also be used by people with disabilities without difficulty or outside help.
       conviction: My firm conviction
       source: Source
-      take_caution: "But be careful: Accessibility is not a self-runner!"
+      take_caution: 'But be careful: Accessibility is not a self-runner!'
       title: Welcome to Accessibility Doctor!
     statistics:
       number_of_resource: Number of %{resource}

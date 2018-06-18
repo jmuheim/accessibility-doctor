@@ -22,6 +22,10 @@ de:
       philanthropy: 25% Philanthropie
       title: Ich koste
     i_offer:
+      coaching_training: Coaching und Training
+      consulting: Beratung
+      contract_work: Auftragsarbeit
+      live_remote_testing: Live Remote Barrierefreiheits-Prüfung
       title: Ich biete
     news:
       title: Letzte Neuigkeiten
@@ -30,7 +34,7 @@ de:
       accessibility_definition: Elektronische Medien sind so gestaltet, dass diese auch von Menschen mit Behinderung ohne Erschwernis oder fremde Hilfe genutzt werden können.
       conviction: Meine feste Überzeugung
       source: Quelle
-      take_caution: "Aber Vorsicht: Barrierefreiheit ist kein Selbstläufer!"
+      take_caution: 'Aber Vorsicht: Barrierefreiheit ist kein Selbstläufer!'
       title: Willkommen bei Accessibility Doctor!
     statistics:
       number_of_resource: Anzahl %{resource}
