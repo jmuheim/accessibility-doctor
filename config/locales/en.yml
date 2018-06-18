@@ -39,6 +39,8 @@ en:
     statistics:
       number_of_resource: Number of %{resource}
       title: Statistics
+    terms_and_conditions:
+      title: Terms and conditions
     welcome_offer:
       book_now: Book your session now
       free_session: Free "get to know" session

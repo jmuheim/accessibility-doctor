@@ -14,7 +14,7 @@ de:
         notes: Nur für den internen Gebrauch bestimmt (nicht öffentlich einsehbar).
         title: Erscheint als Haupt-Überschrift beim Anzeigen der Seite.
       trial_session_request:
-        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/pages/1">Allgemeine Geschäftsbedingungen</a>'
+        agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/terms_and_conditions">Allgemeine Geschäftsbedingungen</a>'
         availability: Bitten geben Sie mir ein oder mehrere Zeitfenster an, welches Ihnen passen würde für die 15 minütige Session. Mit etwas Glück werde ich bei meiner Kontaktaufnahme eines derselben bestätigen können; ansonsten werde ich Ihnen Alternativen vorschlagen.
         description: Weitere Details und Anmerkungen, etwa Informationen über die zu testende Website, aber auch Fragen zum Thema Barrierefreiheit oder Vorschläge zur potenziellen weiteren Zusammenarbeit.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.

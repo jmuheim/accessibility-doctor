@@ -14,7 +14,7 @@ en:
         notes: Only for internal usage (not publicly viewable).
         title: Appears as main heading when displaying the page.
       trial_session_request:
-        agree_to_terms_and_conditions: 'Please read carefully: <a href="/de/pages/1">General Terms and Conditions</a>'
+        agree_to_terms_and_conditions: 'Please read carefully: <a href="/en/terms_and_conditions">General Terms and Conditions</a>'
         availability: Please give me one or more time frames, which would suit you for the 15 minute session. With a little luck I will be able to confirm one of them when I contact you; otherwise I will suggest alternatives.
         description: Further details and comments, such as information about the website to be tested, as well as questions about accessibility or suggestions for potential future collaboration.
         duration: The first session always lasts 15 minutes and is 100% free.

@@ -39,6 +39,8 @@ de:
     statistics:
       number_of_resource: Anzahl %{resource}
       title: Statistiken
+    terms_and_conditions:
+      title: Allgemeine Geschäftsbedingungen
     welcome_offer:
       book_now: Reservieren Sie jetzt Ihre Session
       free_session: Kostenlose Kennenlern-Session
