@@ -32,7 +32,11 @@ en:
     show:
       accessibility: Accessibility
       accessibility_definition: Electronic media are designed in such a way that they can also be used by people with disabilities without difficulty or outside help.
+      adg_go_live_alt: Joshua Muheim presenting the ADG
       conviction: My firm conviction
+      frontendconf_alt: Frontend Conf logo
+      introductory_statements: Introductory statements
+      news: News
       source: Source
       take_caution: 'But be careful: Accessibility is not a self-runner!'
       title: Welcome to Accessibility Doctor!

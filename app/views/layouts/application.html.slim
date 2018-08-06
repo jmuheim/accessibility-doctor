@@ -27,7 +27,7 @@ html lang=I18n.locale
       h1.sr-only = t '.footer'
       .container
         .row
-          .col-xs-8.slogan.atom
+          .col-xs-7.slogan.atom
             p
               => link_to(t('app.name'), 'https://github.com/jmuheim/base/') + ':'
               span.hidden-xs = t 'app.slogan'
@@ -35,7 +35,8 @@ html lang=I18n.locale
               =< link_to pages_path(format: :atom) do
                 = icon :rss, 'Atom Feed', type: :fa
 
-          .col-xs-4.copyright
-            p &copy; 2018 #{link_to t('org.name'), 'http://www.muheimwebdesign.ch/'} - Joshua Muheim, Müliweg 6, 5636 Benzenschwil (Switzerland)
-
             p Thanks to #{link_to 'FlatIcon', 'https://www.flaticon.com/'} for the graphics used on this page.
+
+          .col-xs-5.copyright
+            p &copy; 2018 #{link_to t('org.name'), 'http://www.muheimwebdesign.ch/'}
+            p Joshua Muheim, Müliweg 6, 5636 CH-Benzenschwil

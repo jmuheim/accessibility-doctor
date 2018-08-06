@@ -32,7 +32,11 @@ de:
     show:
       accessibility: Barrierefreiheit
       accessibility_definition: Elektronische Medien sind so gestaltet, dass diese auch von Menschen mit Behinderung ohne Erschwernis oder fremde Hilfe genutzt werden können.
+      adg_go_live_alt: Joshua Muheim präsentiert den ADG
       conviction: Meine feste Überzeugung
+      frontendconf_alt: Frontend Conf Logo
+      introductory_statements: Einleitende Stellungnahmen
+      news: Neuigkeiten
       source: Quelle
       take_caution: 'Aber Vorsicht: Barrierefreiheit ist kein Selbstläufer!'
       title: Willkommen bei Accessibility Doctor!

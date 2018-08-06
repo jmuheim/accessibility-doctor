@@ -15,7 +15,71 @@
   .col-md-12
     hr
 
-    h2.sr-only Einleitende Stellungnahmen
+    h2 = t '.news'
+
+    .row
+      .col-md-6
+        h3 Workshop at Frontend Conf 2018
+
+        .row
+          .col-md-5
+            .markdown
+              .figure
+                = image_tag 'homepage/frontendconf.png', class: 'image', alt: t('.frontendconf_alt')
+
+          .col-md-7
+            p I am happy to announce that I will be holding a workshop at #{link_to 'Frontend Conference 2018', 'https://frontendconf.ch/workshops/creating-an-accessible-autocomplete-widget-thats-working-for-all'} in Zurich.
+
+            p In this full day workshop I will explain how to implement autocomplete widgets that truly work for all, based on the #{link_to "Accessibility Developer Guide's autosuggest widget", 'https://www.accessibility-developer-guide.com/examples/widgets/autosuggest/'}.
+
+            p Not only will the audience reproduce the steps and decisions necessary for creating this inclusive truly widget - you will also learn how to examine the quality of other solutions using sophisticated tools (like screen readers).
+
+        .row
+          .col-md-12
+            p Thanks for this opportunity, Frontend Conf staff. And kudos for donating the proceeds to #{link_to '«Access for All»', 'https://www.access-for-all.ch/ch/'} foundation!
+
+            p: strong Get your ticket now!
+
+            dl.dl-horizontal
+              dt Date
+              dd 29th of August 2018, 9:00 to 17:00
+              dt Location
+              dd Belvoirpark, Seestrasse 125, 8002 Zürich
+              dt Official page
+              dd = link_to 'Accessible autocomplete widgets that work for all', 'https://frontendconf.ch/workshops/creating-an-accessible-autocomplete-widget-thats-working-for-all'
+
+      .col-md-6
+        h3 Successful go-live of the ADG
+
+        .row
+          .col-md-5
+            p My vision has come true: after years of work, on June 19th, the Accessibility Developer Guide (ADG) has finally been released to the public. Around 100 interested persons attended the event in Zürich.
+
+            p I am the initiator and main contributor of the ADG, but finally it was a communal effort by the Accessibility Alliance. The project is 100% Open Source.
+
+          .col-md-7
+            .markdown
+              .figure
+                = image_tag 'homepage/adg_go_live.jpg', class: 'image', alt: t('.adg_go_live_alt')
+                p.caption aria-hidden=true = t '.adg_go_live_alt'
+
+        .row
+          .col-md-12
+            p The ADG was developed under the keyword "by developers - for developers" in order to support them practically, concretely and pragmatically in the creation of accessible web offers. It is the only resource like this, and as such my legacy to «Access for all» (but I will continue to work on it as part of the Open Source community).
+
+            dl.dl-horizontal
+              dt URL
+              dd #{link_to 'www.accessibility-developer-guide.com', 'https://www.accessibility-developer-guide.com/'}
+              dt Official announcement
+              dd = link_to 'Der Accessibility Developer Guide (ADG) ist da!', 'https://mailchi.mp/653e8abd833a/newsletter-stiftung-zugang-fr-alle-2018_3#Der%20Accessibility%20Developer%20Guide%20(ADG)%20ist%20da!'
+              dt Video recording
+              dd = link_to 'ADG Launch Event (YouTube)', 'https://www.youtube.com/watch?v=ngt_94l5Sso'
+
+.row
+  .col-md-12
+    hr
+
+    h2.sr-only = t '.introductory_statements'
 
 .row
   .col-md-8
