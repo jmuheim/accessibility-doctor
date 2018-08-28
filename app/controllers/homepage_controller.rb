@@ -13,12 +13,12 @@ class HomepageController < ApplicationController
 
   def add_breadcrumbs
     case action_name
-    when 'i_am'
-      add_breadcrumb t('homepage.i_am.title'), i_am_path
-    when 'i_offer'
-      add_breadcrumb t('homepage.i_offer.title'), i_offer_path
-    when 'i_charge'
-      add_breadcrumb t('homepage.i_charge.title'), i_charge_path
+    when 'we_are'
+      add_breadcrumb t('homepage.we_are.title'), we_are_path
+    when 'we_offer'
+      add_breadcrumb t('homepage.we_offer.title'), we_offer_path
+    when 'we_charge'
+      add_breadcrumb t('homepage.we_charge.title'), we_charge_path
     when 'terms_and_conditions'
       add_breadcrumb t('homepage.terms_and_conditions.title'), terms_and_conditions_path
     end

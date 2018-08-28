@@ -20,9 +20,9 @@ Rails.application.routes.draw do
       get code, to: 'errors#show', code: code
     end
 
-    get 'i_am', to: 'homepage#i_am', as: 'i_am'
-    get 'i_offer', to: 'homepage#i_offer', as: 'i_offer'
-    get 'i_charge', to: 'homepage#i_charge', as: 'i_charge'
+    get 'we_are', to: 'homepage#we_are', as: 'we_are'
+    get 'we_offer', to: 'homepage#we_offer', as: 'we_offer'
+    get 'we_charge', to: 'homepage#we_charge', as: 'we_charge'
     get 'terms_and_conditions', to: 'homepage#terms_and_conditions', as: 'terms_and_conditions'
 
     root 'homepage#show'

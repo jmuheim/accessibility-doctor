@@ -8,25 +8,25 @@ en:
     save: Save
   'false': 'No'
   homepage:
-    i_am:
+    we_are:
       adg_hack_day: Me (right) at an ADG hack day of the «Accessibility Alliance»
       fireplace: Me in our new fireplace in the garden, immediately after completion of the same this spring.
       flexible_to_your_needs: Flexible to your needs
       founder_of_the_adg: Founder of the «Accessibility Developer Guide»
       fully_qualified: Fully qualified
       screenshot_adg: Screenshot of the ADG
-      title: I am
-    i_charge:
+      title: We are
+    we_charge:
       hourly_rate: CHF 200.- per hour
       npo_ngo_pricing_available: NGO/NPO Pricing available
       philanthropy: 25% Philanthropie
-      title: I charge
-    i_offer:
+      title: We charge
+    we_offer:
       coaching_training: Coaching and Training
       consulting: Consulting
       contract_work: Contract work
       live_remote_testing: Live Remote Accessibility Testing
-      title: I offer
+      title: We offer
     news:
       title: Latest news
     show:

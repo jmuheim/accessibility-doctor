@@ -21,17 +21,17 @@ nav#navigation.container
         h3.sr-only = t '.content_navigation'
 
         ul#content_navigation.nav.navbar-nav
-          = navigation_item i_am_path do
+          = navigation_item we_are_path do
             => icon 'user', type: :fa
-            = t 'homepage.i_am.title'
+            = t 'homepage.we_are.title'
 
-          = navigation_item i_offer_path do
+          = navigation_item we_offer_path do
             => icon 'edit', type: :fa
-            = t 'homepage.i_offer.title'
+            = t 'homepage.we_offer.title'
 
-          = navigation_item i_charge_path do
+          = navigation_item we_charge_path do
             => icon 'money', type: :fa
-            = t 'homepage.i_charge.title'
+            = t 'homepage.we_charge.title'
 
           - if can? :index, TrialSessionRequest
             == render 'layouts/resource_navigation_group', resource_class: TrialSessionRequest
