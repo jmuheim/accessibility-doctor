@@ -5,7 +5,7 @@ describe 'Creating trial session request' do
     visit new_trial_session_request_path
 
     expect(page).to have_title 'Create Trial Session Request - A11y-Doc'
-    expect(page).to have_active_navigation_items 'Request a free trial consultation!'
+    expect(page).to have_active_navigation_items 'Request consultation!'
     expect(page).to have_breadcrumbs 'A11y-Doc', 'Trial Session Requests', 'Create'
     expect(page).to have_headline 'Create Trial Session Request'
 
