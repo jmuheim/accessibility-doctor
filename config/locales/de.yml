@@ -8,6 +8,8 @@ de:
     save: Speichern
   'false': Nein
   homepage:
+    contact:
+      title: Kontakt
     we_are:
       adg_hack_day: Joshua (rechts) an einem ADG Hack-Day der «Accessibility Alliance»
       josh: Joshua Muheim

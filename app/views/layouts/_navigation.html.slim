@@ -39,6 +39,9 @@ nav#navigation.container
             = navigation_item new_trial_session_request_path do
               = icon 'thumbs-o-up', type: :fa
               =< t '.new_trial_session_request'
+          = navigation_item 'mailto:help@accessibility-doctor.com' do
+            => icon 'envelope', type: :fa
+            = t 'homepage.contact.title'
 
           - @root_pages.each do |page|
             - if (children = page.children).any?
