@@ -77,7 +77,7 @@ gem 'fancybox2-rails' # Fancybox (lightbox clone)
 
 gem 'slugify' # Turn a string into its alphanumerical dashed equivalent
 
-gem 'pandoc-ruby' # Markdown parser and format converter (from/to Markdown, HTML, Docx, PDF, Epub, ODT...)
+gem 'pandoc-ruby', git: 'https://github.com/alphabetum/pandoc-ruby.git' # Markdown parser and format converter (from/to Markdown, HTML, Docx, PDF, Epub, ODT...)
 
 gem 'ransack' # Object-based searching
 
