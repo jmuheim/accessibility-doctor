@@ -92,7 +92,7 @@ describe 'Navigation' do
         visit root_path
 
         within 'nav' do
-          expect(page).to have_link 'Base'
+          expect(page).to have_link 'Accessibility Doctor '
 
           within '#content_navigation' do
             expect(page).to have_link 'Page test navigation title'
