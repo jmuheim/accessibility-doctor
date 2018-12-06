@@ -21,7 +21,7 @@ en:
         email: Will only be used for contacting you and will never be passed on to third parties.
         how_found_us: You are welcome to describe this in more detail in the following field.
         humanizer_answer: 'By answering this question you make yourself identifiable as a human being; this is a protection from automated computer queries (spam). More information here: <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
-        language: In which language would you like to communicate? My mother tongue is Swiss German, but I also speak fluent English.
+        language: In which language would you like to communicate? Our mother tongue is Swiss German, but we also speak fluent English.
         message: I am looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
         time_zone: Please name your time zone so that I can take into account potential time differences between you and me (Switzerland, GMT+1).
         url: Specifying the website to be tested allows me to plan the session optimally, but we can also select a website ad hoc.

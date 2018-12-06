@@ -15,16 +15,16 @@ de:
         title: Erscheint als Haupt-Überschrift beim Anzeigen der Seite.
       trial_session_request:
         agree_to_terms_and_conditions: 'Bitte gründlich lesen: <a href="/de/terms_and_conditions">Allgemeine Geschäftsbedingungen</a>'
-        availability: Bitten geben Sie mir ein oder mehrere Zeitfenster an, welches Ihnen passen würde für die 15 minütige Session. Mit etwas Glück werde ich bei meiner Kontaktaufnahme eines derselben bestätigen können; ansonsten werde ich Ihnen Alternativen vorschlagen.
+        availability: Bitten geben Sie uns ein oder mehrere Zeitfenster an, welches Ihnen passen würde für die 15 minütige Session. Mit etwas Glück werden wir bei unserer Kontaktaufnahme eines derselben bestätigen können; ansonsten werden wir Ihnen Alternativen vorschlagen.
         description: Weitere Details und Anmerkungen, etwa Informationen über die zu testende Website, aber auch Fragen zum Thema Barrierefreiheit oder Vorschläge zur potenziellen weiteren Zusammenarbeit.
         duration: Die erste Sitzung dauert immer eine Viertelstunde und ist 100% kostenlos.
         email: Wird nur für die Kontaktaufnahme verwendet und niemals an Dritte weitergegeben.
         how_found_us: Gerne dürfen Sie dies im nachfolgenden Feld noch genauer umschreiben.
         humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies ist ein Schutz vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
-        language: In welcher Sprache möchten Sie kommunizieren? Meine Muttersprache ist Deutsch, aber ich spreche auch fliessend Englisch.
-        message: Ich freue mich über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
-        time_zone: Bitte nennen Sie Ihre Zeitzone, damit ich potenzielle Zeitunterschiede zwischen Ihnen und mir (Schweiz, GMT+1) berücksichtigen kann.
-        url: Die Angabe der zu testenden Website erlaubt mir, die Session optimal zu planen. Wir können aber auch adhoc eine Website wählen.
+        language: In welcher Sprache möchten Sie kommunizieren? Unsere Muttersprache ist Deutsch, aber wir sprechen auch fliessend Englisch.
+        message: Wir freuen uns über weitere Details zu Ihnen und Ihrer Anfrage, z.B. wer Sie sind, welche Erfahrung Sie mit Barrierefreiheit bereits haben, was Ihre konkrete Motivation für diese Session ist und welche Fragen Sie diesbezüglich besonders beschäftigen, etc.
+        time_zone: Bitte nennen Sie Ihre Zeitzone, damit wir potenzielle Zeitunterschiede zwischen Ihnen und uns (Schweiz, GMT+1) berücksichtigen können.
+        url: Die Angabe der zu testenden Website erlaubt uns, die Session optimal zu planen. Wir können aber auch adhoc eine Website wählen.
       user:
         about: Schreib etwas über dich (Biographie, Interessen, Hobbies...). Du kannst Pandoc Markdown verwenden zum Formatieren.
         humanizer_answer: 'Mit der Beantwortung dieser Frage machen Sie sich als Mensch erkennbar; dies ist ein Schutz vor automatisierten Computer-Anfragen (Spam). Mehr Informationen hier: <a href="https://de.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
