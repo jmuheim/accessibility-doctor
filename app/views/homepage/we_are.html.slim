@@ -18,11 +18,19 @@
   .col-md-6
     == render 'homepage/we_are/fully_qualified'
 
-  .col-md-6
+  .col-md-3
     .markdown
       .figure
-        = image_tag 'homepage/joshua-muheim-frontend-conference-zurich.jpg', class: 'image', alt: t('.josh')
+        = image_tag 'homepage/markus.jpg', class: 'image image-responsive', alt: t('.markus')
+        p.caption aria-hidden=true = t '.markus'
+        
+  .col-md-3
+    .markdown
+      .figure
+        = image_tag 'homepage/joshua-muheim-frontend-conference-zurich.jpg', class: 'image image-responsive', alt: t('.josh')
         p.caption aria-hidden=true = t '.josh'
+
+
 
 .row
   hr
