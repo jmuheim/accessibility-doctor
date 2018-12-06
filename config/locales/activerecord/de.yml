@@ -78,8 +78,8 @@ de:
         one: Version
         other: Versionen
       trial_session_request:
-        one: Antrag für Probe-Session
-        other: Anträge für Probe-Sessions
+        one: Anfrage für eine Probe-Sitzung
+        other: Anfragen für Probe-Sitzungen
       user:
         one: Benutzer
         other: Benutzer

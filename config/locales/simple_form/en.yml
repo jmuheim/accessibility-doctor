@@ -15,15 +15,15 @@ en:
         title: Appears as main heading when displaying the page.
       trial_session_request:
         agree_to_terms_and_conditions: 'Please read carefully: <a href="/en/terms_and_conditions">General Terms and Conditions</a>'
-        availability: Please give me one or more time frames, which would suit you for the 15 minute session. With a little luck I will be able to confirm one of them when I contact you; otherwise I will suggest alternatives.
+        availability: Please give me one or more time frames, which would suit you for the 15 minute session. With a little luck we will be able to confirm one of them when we contact you; otherwise we will suggest alternatives.
         description: Further details and comments, such as information about the website to be tested, as well as questions about accessibility or suggestions for potential future collaboration.
         duration: The first session always lasts 15 minutes and is 100% free.
         email: Will only be used for contacting you and will never be passed on to third parties.
         how_found_us: You are welcome to describe this in more detail in the following field.
         humanizer_answer: 'By answering this question you make yourself identifiable as a human being; this is a protection from automated computer queries (spam). More information here: <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA (Wikipedia)</a>'
         language: In which language would you like to communicate? Our mother tongue is Swiss German, but we also speak fluent English.
-        message: I am looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
-        time_zone: Please name your time zone so that I can take into account potential time differences between you and me (Switzerland, GMT+1).
+        message: We are looking forward to receiving further details about you and your enquiry, e. g. who you are, what kind of experience you already have with accessibility, what your concrete motivation for this session is and what kind of questions you are especially concerned with, etc.
+        time_zone: Please name your time zone so that we can take into account potential time differences between you and me (Switzerland, GMT+1).
         url: Specifying the website to be tested allows me to plan the session optimally, but we can also select a website ad hoc.
       user:
         about: Write something about you (biography, interests, hobbies...). You can use Pandoc Markdown to add basic formatting.

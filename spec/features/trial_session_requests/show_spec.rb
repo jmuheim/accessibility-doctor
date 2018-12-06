@@ -12,7 +12,7 @@ describe 'Showing trial session request' do
       expect(page).to have_breadcrumbs 'A11y-Doc', 'Trial Session Requests', 'Trial Session Request test...'
       expect(page).to have_headline 'Thank you very much!'
 
-      expect(page).to have_text 'Your request has been received successfully and I will take care of its processing!'
+      expect(page).to have_text 'Your request has been received successfully and we will take care of its processing!'
     end
   end
 
