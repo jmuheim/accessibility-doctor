@@ -18,46 +18,42 @@
     h2 = t '.news'
 
     .row
-      .col-md-6
+      .col-md-4
+        h3 Course in Web Accessibility at the School of Design Zurich (FS19)
+
+        .row
+          .col-md-12
+            .markdown
+              .figure
+                = image_tag 'homepage/sfgz.jpg', class: 'image', alt: t('.frontendconf_alt')
+
+          .col-md-12
+            p For the study in #{link_to 'Interaction Design HF at the School of Design Zurich', 'https://sfgz.ch/angebot/weiterbildung/hoehere-fachschule/IAD'}, we were allowed to conduct a training course on the topic of Web Accessibility over several course days.
+
+      .col-md-4
         h3 Workshop at Frontend Conf 2018
 
         .row
-          .col-md-5
+          .col-md-12
             .markdown
               .figure
                 = image_tag 'homepage/frontendconf.png', class: 'image', alt: t('.frontendconf_alt')
 
-          .col-md-7
-            p We are happy to announce that Joshua will be holding a workshop at #{link_to 'Frontend Conference 2018', 'https://frontendconf.ch/workshops/creating-an-accessible-autocomplete-widget-thats-working-for-all'} in Zurich.
-
-            p In this full day workshop Joshua will explain how to implement autocomplete widgets that truly work for all, based on the #{link_to "Accessibility Developer Guide's autosuggest widget", 'https://www.accessibility-developer-guide.com/examples/widgets/autosuggest/'}.
-
-            p Not only will the audience reproduce the steps and decisions necessary for creating this inclusive truly widget - you will also learn how to examine the quality of other solutions using sophisticated tools (like screen readers).
-
-        .row
           .col-md-12
-            p Thanks for this opportunity, Frontend Conf staff. And kudos for donating the proceeds to #{link_to '«Access for All»', 'https://www.access-for-all.ch/ch/'} foundation!
+            p We were happy that Joshua been holding a workshop at #{link_to 'Frontend Conference 2018', 'https://frontendconf.ch/workshops/creating-an-accessible-autocomplete-widget-thats-working-for-all'} in Zurich.
 
-            p: strong Get your ticket now!
+            p In this full day workshop Joshua explained how to implement autocomplete widgets that truly work for all, based on the #{link_to "Accessibility Developer Guide's autosuggest widget", 'https://www.accessibility-developer-guide.com/examples/widgets/autosuggest/'}.
 
-            dl.dl-horizontal
-              dt Date
-              dd 29th of August 2018, 9:00 to 17:00
-              dt Location
-              dd Belvoirpark, Seestrasse 125, 8002 Zürich
-              dt Official page
-              dd = link_to 'Accessible autocomplete widgets that work for all', 'https://frontendconf.ch/workshops/creating-an-accessible-autocomplete-widget-thats-working-for-all'
-
-      .col-md-6
+      .col-md-4
         h3 Successful go-live of the ADG
 
         .row
-          .col-md-5
+          .col-md-12
             p Joshuas vision has come true: after years of work, on June 19th, the Accessibility Developer Guide (ADG) has finally been released to the public. Around 100 interested persons attended the event in Zürich.
 
             p Joshua is the initiator and main contributor of the ADG, but finally it was a communal effort by the Accessibility Alliance. The project is 100% Open Source.
 
-          .col-md-7
+          .col-md-12
             .markdown
               .figure
                 = image_tag 'homepage/adg_go_live.jpg', class: 'image', alt: t('.adg_go_live_alt')
